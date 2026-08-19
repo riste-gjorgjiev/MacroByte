@@ -1,0 +1,2109 @@
+[
+  {
+    "name": "Banana, raw",
+    "category": "Fruits",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "medium", "gram_weight": 118, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 89,
+      "Protein": 1.09,
+      "Carbohydrate": 22.84,
+      "Fat": 0.33,
+      "Fiber": 2.6,
+      "Sugar": 12.23,
+      "Calcium": 5,
+      "Iron": 0.26,
+      "Magnesium": 27,
+      "Phosphorus": 22,
+      "Potassium": 358,
+      "Sodium": 1,
+      "Zinc": 0.15,
+      "Vitamin C": 8.7,
+      "Vitamin B6": 0.367
+    }
+  },
+  {
+    "name": "Apple, raw with skin",
+    "category": "Fruits",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "medium", "gram_weight": 182, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 52,
+      "Protein": 0.26,
+      "Carbohydrate": 13.81,
+      "Fat": 0.17,
+      "Fiber": 2.4,
+      "Sugar": 10.39,
+      "Calcium": 6,
+      "Iron": 0.12,
+      "Magnesium": 5,
+      "Phosphorus": 11,
+      "Potassium": 107,
+      "Sodium": 1,
+      "Zinc": 0.04,
+      "Vitamin C": 4.6
+    }
+  },
+  {
+    "name": "Orange, raw",
+    "category": "Fruits",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "medium", "gram_weight": 131, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 47,
+      "Protein": 0.94,
+      "Carbohydrate": 11.75,
+      "Fat": 0.12,
+      "Fiber": 2.4,
+      "Sugar": 9.35,
+      "Calcium": 40,
+      "Iron": 0.1,
+      "Magnesium": 10,
+      "Phosphorus": 14,
+      "Potassium": 181,
+      "Sodium": 0,
+      "Zinc": 0.07,
+      "Vitamin C": 53.2
+    }
+  },
+  {
+    "name": "Strawberries, raw",
+    "category": "Fruits",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 152, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 32,
+      "Protein": 0.67,
+      "Carbohydrate": 7.68,
+      "Fat": 0.3,
+      "Fiber": 2,
+      "Sugar": 4.89,
+      "Calcium": 16,
+      "Iron": 0.41,
+      "Magnesium": 13,
+      "Phosphorus": 24,
+      "Potassium": 153,
+      "Sodium": 1,
+      "Zinc": 0.14,
+      "Vitamin C": 58.8
+    }
+  },
+  {
+    "name": "Blueberries, raw",
+    "category": "Fruits",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 148, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 57,
+      "Protein": 0.74,
+      "Carbohydrate": 14.49,
+      "Fat": 0.33,
+      "Fiber": 2.4,
+      "Sugar": 9.96,
+      "Calcium": 6,
+      "Iron": 0.28,
+      "Magnesium": 6,
+      "Phosphorus": 12,
+      "Potassium": 77,
+      "Sodium": 1,
+      "Zinc": 0.16,
+      "Vitamin C": 9.7
+    }
+  },
+  {
+    "name": "Grapes, red or green",
+    "category": "Fruits",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 151, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 69,
+      "Protein": 0.72,
+      "Carbohydrate": 18.1,
+      "Fat": 0.16,
+      "Fiber": 0.9,
+      "Sugar": 15.48,
+      "Calcium": 10,
+      "Iron": 0.36,
+      "Magnesium": 7,
+      "Phosphorus": 10,
+      "Potassium": 191,
+      "Sodium": 2,
+      "Zinc": 0.07,
+      "Vitamin C": 3.2
+    }
+  },
+  {
+    "name": "Watermelon, raw",
+    "category": "Fruits",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup diced", "gram_weight": 152, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 30,
+      "Protein": 0.61,
+      "Carbohydrate": 7.55,
+      "Fat": 0.15,
+      "Fiber": 0.4,
+      "Sugar": 6.2,
+      "Calcium": 7,
+      "Iron": 0.24,
+      "Magnesium": 10,
+      "Phosphorus": 10,
+      "Potassium": 112,
+      "Sodium": 1,
+      "Zinc": 0.1,
+      "Vitamin C": 8.1
+    }
+  },
+  {
+    "name": "Mango, raw",
+    "category": "Fruits",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 165, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 60,
+      "Protein": 0.82,
+      "Carbohydrate": 15,
+      "Fat": 0.38,
+      "Fiber": 1.6,
+      "Sugar": 13.7,
+      "Calcium": 11,
+      "Iron": 0.16,
+      "Magnesium": 10,
+      "Phosphorus": 14,
+      "Potassium": 168,
+      "Sodium": 1,
+      "Zinc": 0.09,
+      "Vitamin C": 36.4
+    }
+  },
+  {
+    "name": "Pineapple, raw",
+    "category": "Fruits",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 165, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 50,
+      "Protein": 0.54,
+      "Carbohydrate": 13.12,
+      "Fat": 0.12,
+      "Fiber": 1.4,
+      "Sugar": 9.85,
+      "Calcium": 13,
+      "Iron": 0.29,
+      "Magnesium": 12,
+      "Phosphorus": 8,
+      "Potassium": 109,
+      "Sodium": 1,
+      "Zinc": 0.12,
+      "Vitamin C": 47.8
+    }
+  },
+  {
+    "name": "Peach, raw",
+    "category": "Fruits",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "medium", "gram_weight": 150, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 39,
+      "Protein": 0.91,
+      "Carbohydrate": 9.54,
+      "Fat": 0.25,
+      "Fiber": 1.5,
+      "Sugar": 8.39,
+      "Calcium": 6,
+      "Iron": 0.25,
+      "Magnesium": 9,
+      "Phosphorus": 20,
+      "Potassium": 190,
+      "Sodium": 0,
+      "Zinc": 0.07,
+      "Vitamin C": 6.6
+    }
+  },
+  {
+    "name": "Pear, raw",
+    "category": "Fruits",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "medium", "gram_weight": 178, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 57,
+      "Protein": 0.36,
+      "Carbohydrate": 15.23,
+      "Fat": 0.12,
+      "Fiber": 3.1,
+      "Sugar": 9.75,
+      "Calcium": 9,
+      "Iron": 0.18,
+      "Magnesium": 7,
+      "Phosphorus": 12,
+      "Potassium": 116,
+      "Sodium": 1,
+      "Zinc": 0.1,
+      "Vitamin C": 4.3
+    }
+  },
+  {
+    "name": "Kiwi, raw",
+    "category": "Fruits",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "medium", "gram_weight": 69, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 61,
+      "Protein": 1.14,
+      "Carbohydrate": 14.66,
+      "Fat": 0.52,
+      "Fiber": 3,
+      "Sugar": 8.99,
+      "Calcium": 34,
+      "Iron": 0.31,
+      "Magnesium": 17,
+      "Phosphorus": 34,
+      "Potassium": 312,
+      "Sodium": 2,
+      "Zinc": 0.14,
+      "Vitamin C": 92.7
+    }
+  },
+  {
+    "name": "Avocado, raw",
+    "category": "Fruits",
+    "servingSizes": [
+      { "amount": 0.5, "unit_name": "medium", "gram_weight": 68, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 160,
+      "Protein": 2,
+      "Carbohydrate": 8.53,
+      "Fat": 14.66,
+      "Fiber": 6.7,
+      "Sugar": 0.66,
+      "Calcium": 12,
+      "Iron": 0.55,
+      "Magnesium": 29,
+      "Phosphorus": 52,
+      "Potassium": 485,
+      "Sodium": 7,
+      "Zinc": 0.64,
+      "Vitamin C": 10
+    }
+  },
+  {
+    "name": "Lemon, raw without skin",
+    "category": "Fruits",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "juice of 1 lemon", "gram_weight": 48, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 29,
+      "Protein": 1.1,
+      "Carbohydrate": 9.32,
+      "Fat": 0.3,
+      "Fiber": 2.8,
+      "Sugar": 2.5,
+      "Calcium": 26,
+      "Iron": 0.6,
+      "Magnesium": 8,
+      "Phosphorus": 18,
+      "Potassium": 138,
+      "Sodium": 2,
+      "Zinc": 0.06,
+      "Vitamin C": 53
+    }
+  },
+  {
+    "name": "Raspberries, raw",
+    "category": "Fruits",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 123, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 52,
+      "Protein": 1.2,
+      "Carbohydrate": 11.94,
+      "Fat": 0.65,
+      "Fiber": 6.5,
+      "Sugar": 4.42,
+      "Calcium": 25,
+      "Iron": 0.69,
+      "Magnesium": 22,
+      "Phosphorus": 29,
+      "Potassium": 151,
+      "Sodium": 1,
+      "Zinc": 0.42,
+      "Vitamin C": 26.2
+    }
+  },
+  {
+    "name": "Broccoli, raw",
+    "category": "Vegetables",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup chopped", "gram_weight": 91, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 34,
+      "Protein": 2.82,
+      "Carbohydrate": 6.64,
+      "Fat": 0.37,
+      "Fiber": 2.6,
+      "Sugar": 1.7,
+      "Calcium": 47,
+      "Iron": 0.73,
+      "Magnesium": 21,
+      "Phosphorus": 66,
+      "Potassium": 316,
+      "Sodium": 33,
+      "Zinc": 0.41,
+      "Vitamin C": 89.2
+    }
+  },
+  {
+    "name": "Spinach, raw",
+    "category": "Vegetables",
+    "servingSizes": [
+      { "amount": 2, "unit_name": "cups", "gram_weight": 60, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 23,
+      "Protein": 2.86,
+      "Carbohydrate": 3.63,
+      "Fat": 0.39,
+      "Fiber": 2.2,
+      "Sugar": 0.42,
+      "Calcium": 99,
+      "Iron": 2.71,
+      "Magnesium": 79,
+      "Phosphorus": 49,
+      "Potassium": 558,
+      "Sodium": 79,
+      "Zinc": 0.53,
+      "Vitamin C": 28.1,
+      "Vitamin A": 469
+    }
+  },
+  {
+    "name": "Carrot, raw",
+    "category": "Vegetables",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "medium", "gram_weight": 61, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 41,
+      "Protein": 0.93,
+      "Carbohydrate": 9.58,
+      "Fat": 0.24,
+      "Fiber": 2.8,
+      "Sugar": 4.74,
+      "Calcium": 33,
+      "Iron": 0.3,
+      "Magnesium": 12,
+      "Phosphorus": 35,
+      "Potassium": 320,
+      "Sodium": 69,
+      "Zinc": 0.24,
+      "Vitamin C": 5.9,
+      "Vitamin A": 835
+    }
+  },
+  {
+    "name": "Tomato, raw",
+    "category": "Vegetables",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "medium", "gram_weight": 123, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 18,
+      "Protein": 0.88,
+      "Carbohydrate": 3.89,
+      "Fat": 0.2,
+      "Fiber": 1.2,
+      "Sugar": 2.63,
+      "Calcium": 10,
+      "Iron": 0.27,
+      "Magnesium": 11,
+      "Phosphorus": 24,
+      "Potassium": 237,
+      "Sodium": 5,
+      "Zinc": 0.17,
+      "Vitamin C": 13.7
+    }
+  },
+  {
+    "name": "Cucumber, raw with peel",
+    "category": "Vegetables",
+    "servingSizes": [
+      { "amount": 0.5, "unit_name": "medium", "gram_weight": 150, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 15,
+      "Protein": 0.65,
+      "Carbohydrate": 3.63,
+      "Fat": 0.11,
+      "Fiber": 0.5,
+      "Sugar": 1.67,
+      "Calcium": 16,
+      "Iron": 0.28,
+      "Magnesium": 13,
+      "Phosphorus": 24,
+      "Potassium": 147,
+      "Sodium": 2,
+      "Zinc": 0.2,
+      "Vitamin C": 2.8
+    }
+  },
+  {
+    "name": "Bell pepper, red raw",
+    "category": "Vegetables",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "medium", "gram_weight": 119, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 31,
+      "Protein": 0.99,
+      "Carbohydrate": 6.03,
+      "Fat": 0.3,
+      "Fiber": 2.1,
+      "Sugar": 4.2,
+      "Calcium": 7,
+      "Iron": 0.43,
+      "Magnesium": 12,
+      "Phosphorus": 26,
+      "Potassium": 211,
+      "Sodium": 4,
+      "Zinc": 0.25,
+      "Vitamin C": 127.7
+    }
+  },
+  {
+    "name": "Onion, raw",
+    "category": "Vegetables",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "medium", "gram_weight": 110, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 40,
+      "Protein": 1.1,
+      "Carbohydrate": 9.34,
+      "Fat": 0.1,
+      "Fiber": 1.7,
+      "Sugar": 4.24,
+      "Calcium": 23,
+      "Iron": 0.21,
+      "Magnesium": 10,
+      "Phosphorus": 29,
+      "Potassium": 146,
+      "Sodium": 4,
+      "Zinc": 0.17,
+      "Vitamin C": 7.4
+    }
+  },
+  {
+    "name": "Garlic, raw",
+    "category": "Vegetables",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "clove", "gram_weight": 3, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 149,
+      "Protein": 6.36,
+      "Carbohydrate": 33.06,
+      "Fat": 0.5,
+      "Fiber": 2.1,
+      "Sugar": 1,
+      "Calcium": 181,
+      "Iron": 1.7,
+      "Magnesium": 25,
+      "Phosphorus": 153,
+      "Potassium": 401,
+      "Sodium": 17,
+      "Zinc": 1.16,
+      "Vitamin C": 31.2
+    }
+  },
+  {
+    "name": "Kale, raw",
+    "category": "Vegetables",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup chopped", "gram_weight": 67, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 49,
+      "Protein": 4.28,
+      "Carbohydrate": 8.75,
+      "Fat": 0.93,
+      "Fiber": 3.6,
+      "Sugar": 2.26,
+      "Calcium": 150,
+      "Iron": 1.47,
+      "Magnesium": 47,
+      "Phosphorus": 92,
+      "Potassium": 491,
+      "Sodium": 38,
+      "Zinc": 0.56,
+      "Vitamin C": 120,
+      "Vitamin A": 681
+    }
+  },
+  {
+    "name": "Lettuce, romaine raw",
+    "category": "Vegetables",
+    "servingSizes": [
+      { "amount": 2, "unit_name": "cups shredded", "gram_weight": 94, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 17,
+      "Protein": 1.23,
+      "Carbohydrate": 3.29,
+      "Fat": 0.3,
+      "Fiber": 2.1,
+      "Sugar": 1.19,
+      "Calcium": 33,
+      "Iron": 0.97,
+      "Magnesium": 13,
+      "Phosphorus": 30,
+      "Potassium": 194,
+      "Sodium": 28,
+      "Zinc": 0.23,
+      "Vitamin C": 4
+    }
+  },
+  {
+    "name": "Celery, raw",
+    "category": "Vegetables",
+    "servingSizes": [
+      { "amount": 2, "unit_name": "medium stalks", "gram_weight": 80, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 14,
+      "Protein": 0.91,
+      "Carbohydrate": 2.97,
+      "Fat": 0.17,
+      "Fiber": 1.6,
+      "Sugar": 1.34,
+      "Calcium": 40,
+      "Iron": 0.2,
+      "Magnesium": 11,
+      "Phosphorus": 24,
+      "Potassium": 263,
+      "Sodium": 80,
+      "Zinc": 0.13,
+      "Vitamin C": 3.1
+    }
+  },
+  {
+    "name": "Mushrooms, white raw",
+    "category": "Vegetables",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup sliced", "gram_weight": 70, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 22,
+      "Protein": 3.09,
+      "Carbohydrate": 3.26,
+      "Fat": 0.34,
+      "Fiber": 1,
+      "Sugar": 1.97,
+      "Calcium": 3,
+      "Iron": 0.5,
+      "Magnesium": 9,
+      "Phosphorus": 86,
+      "Potassium": 318,
+      "Sodium": 5,
+      "Zinc": 0.52,
+      "Vitamin C": 2.1
+    }
+  },
+  {
+    "name": "Zucchini, raw",
+    "category": "Vegetables",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "medium", "gram_weight": 196, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 17,
+      "Protein": 1.21,
+      "Carbohydrate": 3.11,
+      "Fat": 0.32,
+      "Fiber": 1,
+      "Sugar": 2.5,
+      "Calcium": 16,
+      "Iron": 0.37,
+      "Magnesium": 18,
+      "Phosphorus": 38,
+      "Potassium": 261,
+      "Sodium": 8,
+      "Zinc": 0.32,
+      "Vitamin C": 17.9
+    }
+  },
+  {
+    "name": "Sweet potato, raw",
+    "category": "Vegetables",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "medium", "gram_weight": 130, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 86,
+      "Protein": 1.57,
+      "Carbohydrate": 20.12,
+      "Fat": 0.05,
+      "Fiber": 3,
+      "Sugar": 4.18,
+      "Calcium": 30,
+      "Iron": 0.61,
+      "Magnesium": 25,
+      "Phosphorus": 47,
+      "Potassium": 337,
+      "Sodium": 55,
+      "Zinc": 0.3,
+      "Vitamin C": 2.4,
+      "Vitamin A": 709
+    }
+  },
+  {
+    "name": "Cauliflower, raw",
+    "category": "Vegetables",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup chopped", "gram_weight": 100, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 25,
+      "Protein": 1.92,
+      "Carbohydrate": 4.97,
+      "Fat": 0.28,
+      "Fiber": 2,
+      "Sugar": 1.91,
+      "Calcium": 22,
+      "Iron": 0.42,
+      "Magnesium": 15,
+      "Phosphorus": 44,
+      "Potassium": 299,
+      "Sodium": 30,
+      "Zinc": 0.27,
+      "Vitamin C": 48.2
+    }
+  },
+  {
+    "name": "Chicken breast, cooked roasted",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "breast", "gram_weight": 172, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 165,
+      "Protein": 31.02,
+      "Carbohydrate": 0,
+      "Fat": 3.57,
+      "Fiber": 0,
+      "Sugar": 0,
+      "Calcium": 15,
+      "Iron": 1.04,
+      "Magnesium": 29,
+      "Phosphorus": 228,
+      "Potassium": 256,
+      "Sodium": 74,
+      "Zinc": 0.9
+    }
+  },
+  {
+    "name": "Ground beef, 85% lean cooked",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "patty", "gram_weight": 85, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 250,
+      "Protein": 26.08,
+      "Carbohydrate": 0,
+      "Fat": 15.39,
+      "Fiber": 0,
+      "Sugar": 0,
+      "Calcium": 18,
+      "Iron": 2.61,
+      "Magnesium": 21,
+      "Phosphorus": 198,
+      "Potassium": 318,
+      "Sodium": 73,
+      "Zinc": 6.34
+    }
+  },
+  {
+    "name": "Salmon, Atlantic cooked",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "fillet", "gram_weight": 154, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 208,
+      "Protein": 20.42,
+      "Carbohydrate": 0,
+      "Fat": 13.42,
+      "Fiber": 0,
+      "Sugar": 0,
+      "Calcium": 12,
+      "Iron": 0.8,
+      "Magnesium": 27,
+      "Phosphorus": 240,
+      "Potassium": 363,
+      "Sodium": 59,
+      "Zinc": 0.64
+    }
+  },
+  {
+    "name": "Tuna, canned in water",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "can", "gram_weight": 142, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 116,
+      "Protein": 25.51,
+      "Carbohydrate": 0,
+      "Fat": 0.83,
+      "Fiber": 0,
+      "Sugar": 0,
+      "Calcium": 11,
+      "Iron": 1.56,
+      "Magnesium": 50,
+      "Phosphorus": 303,
+      "Potassium": 237,
+      "Sodium": 338,
+      "Zinc": 0.77
+    }
+  },
+  {
+    "name": "Egg, whole cooked hard-boiled",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "large", "gram_weight": 50, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 155,
+      "Protein": 12.58,
+      "Carbohydrate": 1.12,
+      "Fat": 10.61,
+      "Fiber": 0,
+      "Sugar": 1.12,
+      "Calcium": 50,
+      "Iron": 1.2,
+      "Magnesium": 10,
+      "Phosphorus": 172,
+      "Potassium": 126,
+      "Sodium": 124,
+      "Zinc": 1.02
+    }
+  },
+  {
+    "name": "Pork chop, cooked",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "chop", "gram_weight": 131, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 231,
+      "Protein": 25.72,
+      "Carbohydrate": 0,
+      "Fat": 13.35,
+      "Fiber": 0,
+      "Sugar": 0,
+      "Calcium": 19,
+      "Iron": 0.87,
+      "Magnesium": 28,
+      "Phosphorus": 246,
+      "Potassium": 423,
+      "Sodium": 56,
+      "Zinc": 2.39
+    }
+  },
+  {
+    "name": "Shrimp, cooked",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 134, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 99,
+      "Protein": 24,
+      "Carbohydrate": 0.2,
+      "Fat": 0.3,
+      "Fiber": 0,
+      "Sugar": 0,
+      "Calcium": 70,
+      "Iron": 0.2,
+      "Magnesium": 39,
+      "Phosphorus": 237,
+      "Potassium": 259,
+      "Sodium": 111,
+      "Zinc": 1.64
+    }
+  },
+  {
+    "name": "Turkey breast, cooked roasted",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "serving", "gram_weight": 84, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 135,
+      "Protein": 30.1,
+      "Carbohydrate": 0,
+      "Fat": 0.94,
+      "Fiber": 0,
+      "Sugar": 0,
+      "Calcium": 10,
+      "Iron": 0.67,
+      "Magnesium": 30,
+      "Phosphorus": 200,
+      "Potassium": 293,
+      "Sodium": 48,
+      "Zinc": 1.4
+    }
+  },
+  {
+    "name": "Tofu, firm",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 0.5, "unit_name": "cup", "gram_weight": 126, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 144,
+      "Protein": 15.57,
+      "Carbohydrate": 2.78,
+      "Fat": 8.08,
+      "Fiber": 2.3,
+      "Sugar": 0.6,
+      "Calcium": 350,
+      "Iron": 2.03,
+      "Magnesium": 58,
+      "Phosphorus": 190,
+      "Potassium": 230,
+      "Sodium": 14,
+      "Zinc": 1.15
+    }
+  },
+  {
+    "name": "Greek yogurt, plain nonfat",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "container", "gram_weight": 170, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 59,
+      "Protein": 10.3,
+      "Carbohydrate": 3.6,
+      "Fat": 0.4,
+      "Fiber": 0,
+      "Sugar": 3.6,
+      "Calcium": 110,
+      "Iron": 0,
+      "Magnesium": 11,
+      "Phosphorus": 135,
+      "Potassium": 141,
+      "Sodium": 36,
+      "Zinc": 0.52
+    }
+  },
+  {
+    "name": "Milk, 2% reduced fat",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 244, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 50,
+      "Protein": 3.05,
+      "Carbohydrate": 4.8,
+      "Fat": 2.04,
+      "Fiber": 0,
+      "Sugar": 4.8,
+      "Calcium": 123,
+      "Iron": 0.03,
+      "Magnesium": 11,
+      "Phosphorus": 93,
+      "Potassium": 150,
+      "Sodium": 46,
+      "Zinc": 0.42
+    }
+  },
+  {
+    "name": "Cottage cheese, lowfat 2%",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 226, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 81,
+      "Protein": 12.89,
+      "Carbohydrate": 4.74,
+      "Fat": 1.5,
+      "Fiber": 0,
+      "Sugar": 4.74,
+      "Calcium": 83,
+      "Iron": 0.07,
+      "Magnesium": 8,
+      "Phosphorus": 159,
+      "Potassium": 104,
+      "Sodium": 364,
+      "Zinc": 0.4
+    }
+  },
+  {
+    "name": "Cheddar cheese",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "slice", "gram_weight": 28, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 403,
+      "Protein": 24.9,
+      "Carbohydrate": 1.28,
+      "Fat": 33.14,
+      "Fiber": 0,
+      "Sugar": 0.52,
+      "Calcium": 721,
+      "Iron": 0.68,
+      "Magnesium": 28,
+      "Phosphorus": 512,
+      "Potassium": 98,
+      "Sodium": 621,
+      "Zinc": 3.11
+    }
+  },
+  {
+    "name": "Lentils, cooked boiled",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 198, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 116,
+      "Protein": 9.02,
+      "Carbohydrate": 20.13,
+      "Fat": 0.38,
+      "Fiber": 7.9,
+      "Sugar": 1.8,
+      "Calcium": 19,
+      "Iron": 3.3,
+      "Magnesium": 36,
+      "Phosphorus": 180,
+      "Potassium": 369,
+      "Sodium": 2,
+      "Zinc": 1.27
+    }
+  },
+  {
+    "name": "Black beans, cooked boiled",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 172, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 132,
+      "Protein": 8.86,
+      "Carbohydrate": 23.71,
+      "Fat": 0.5,
+      "Fiber": 8.7,
+      "Sugar": 0.3,
+      "Calcium": 27,
+      "Iron": 2.1,
+      "Magnesium": 70,
+      "Phosphorus": 142,
+      "Potassium": 355,
+      "Sodium": 1,
+      "Zinc": 1.09
+    }
+  },
+  {
+    "name": "White rice, cooked",
+    "category": "Grains",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 158, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 130,
+      "Protein": 2.69,
+      "Carbohydrate": 28.17,
+      "Fat": 0.28,
+      "Fiber": 0.4,
+      "Sugar": 0.05,
+      "Calcium": 10,
+      "Iron": 0.2,
+      "Magnesium": 12,
+      "Phosphorus": 43,
+      "Potassium": 35,
+      "Sodium": 1,
+      "Zinc": 0.49
+    }
+  },
+  {
+    "name": "Brown rice, cooked",
+    "category": "Grains",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 195, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 111,
+      "Protein": 2.55,
+      "Carbohydrate": 23.03,
+      "Fat": 0.87,
+      "Fiber": 1.8,
+      "Sugar": 0.6,
+      "Calcium": 10,
+      "Iron": 0.4,
+      "Magnesium": 43,
+      "Phosphorus": 77,
+      "Potassium": 79,
+      "Sodium": 1,
+      "Zinc": 0.61
+    }
+  },
+  {
+    "name": "Oats, dry",
+    "category": "Grains",
+    "servingSizes": [
+      { "amount": 0.5, "unit_name": "cup", "gram_weight": 40, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 389,
+      "Protein": 16.89,
+      "Carbohydrate": 66.27,
+      "Fat": 6.9,
+      "Fiber": 10.6,
+      "Sugar": 0.99,
+      "Calcium": 54,
+      "Iron": 4.72,
+      "Magnesium": 177,
+      "Phosphorus": 523,
+      "Potassium": 429,
+      "Sodium": 2,
+      "Zinc": 3.97
+    }
+  },
+  {
+    "name": "Whole wheat bread",
+    "category": "Grains",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "slice", "gram_weight": 43, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 247,
+      "Protein": 13,
+      "Carbohydrate": 41.29,
+      "Fat": 3.4,
+      "Fiber": 7,
+      "Sugar": 5.8,
+      "Calcium": 107,
+      "Iron": 2.47,
+      "Magnesium": 138,
+      "Phosphorus": 268,
+      "Potassium": 254,
+      "Sodium": 498,
+      "Zinc": 2.6
+    }
+  },
+  {
+    "name": "White bread",
+    "category": "Grains",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "slice", "gram_weight": 25, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 265,
+      "Protein": 9,
+      "Carbohydrate": 49,
+      "Fat": 3.2,
+      "Fiber": 2.7,
+      "Sugar": 5,
+      "Calcium": 107,
+      "Iron": 3.6,
+      "Magnesium": 25,
+      "Phosphorus": 100,
+      "Potassium": 115,
+      "Sodium": 491,
+      "Zinc": 0.69
+    }
+  },
+  {
+    "name": "Pasta, cooked",
+    "category": "Grains",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 140, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 131,
+      "Protein": 5.02,
+      "Carbohydrate": 25,
+      "Fat": 1.11,
+      "Fiber": 1.8,
+      "Sugar": 0.56,
+      "Calcium": 7,
+      "Iron": 0.56,
+      "Magnesium": 18,
+      "Phosphorus": 67,
+      "Potassium": 44,
+      "Sodium": 1,
+      "Zinc": 0.71
+    }
+  },
+  {
+    "name": "Quinoa, cooked",
+    "category": "Grains",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 185, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 120,
+      "Protein": 4.4,
+      "Carbohydrate": 21.3,
+      "Fat": 1.92,
+      "Fiber": 2.8,
+      "Sugar": 0.87,
+      "Calcium": 17,
+      "Iron": 1.49,
+      "Magnesium": 64,
+      "Phosphorus": 152,
+      "Potassium": 172,
+      "Sodium": 7,
+      "Zinc": 1.08
+    }
+  },
+  {
+    "name": "Barley, cooked",
+    "category": "Grains",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 157, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 123,
+      "Protein": 2.3,
+      "Carbohydrate": 28.2,
+      "Fat": 0.4,
+      "Fiber": 3.8,
+      "Sugar": 0.3,
+      "Calcium": 11,
+      "Iron": 1.3,
+      "Magnesium": 22,
+      "Phosphorus": 54,
+      "Potassium": 93,
+      "Sodium": 1,
+      "Zinc": 0.8
+    }
+  },
+  {
+    "name": "Corn, yellow cooked",
+    "category": "Grains",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "ear", "gram_weight": 90, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 96,
+      "Protein": 3.4,
+      "Carbohydrate": 21,
+      "Fat": 1.5,
+      "Fiber": 2.4,
+      "Sugar": 4.5,
+      "Calcium": 2,
+      "Iron": 0.52,
+      "Magnesium": 37,
+      "Phosphorus": 89,
+      "Potassium": 270,
+      "Sodium": 15,
+      "Zinc": 0.46
+    }
+  },
+  {
+    "name": "Breakfast cereal, corn flakes",
+    "category": "Grains",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 28, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 357,
+      "Protein": 7.1,
+      "Carbohydrate": 84.3,
+      "Fat": 0.4,
+      "Fiber": 1.4,
+      "Sugar": 8.9,
+      "Calcium": 2,
+      "Iron": 28.6,
+      "Magnesium": 21,
+      "Phosphorus": 93,
+      "Potassium": 86,
+      "Sodium": 729,
+      "Zinc": 0.6
+    }
+  },
+  {
+    "name": "All-purpose flour",
+    "category": "Grains",
+    "servingSizes": [
+      { "amount": 0.25, "unit_name": "cup", "gram_weight": 31, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 364,
+      "Protein": 10.33,
+      "Carbohydrate": 76.31,
+      "Fat": 0.98,
+      "Fiber": 2.7,
+      "Sugar": 0.27,
+      "Calcium": 15,
+      "Iron": 4.64,
+      "Magnesium": 22,
+      "Phosphorus": 108,
+      "Potassium": 107,
+      "Sodium": 2,
+      "Zinc": 0.7
+    }
+  },
+  {
+    "name": "Tortilla, flour",
+    "category": "Grains",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "medium", "gram_weight": 45, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 312,
+      "Protein": 8.1,
+      "Carbohydrate": 52.4,
+      "Fat": 8.5,
+      "Fiber": 2.2,
+      "Sugar": 3.5,
+      "Calcium": 136,
+      "Iron": 3.6,
+      "Magnesium": 36,
+      "Phosphorus": 170,
+      "Potassium": 130,
+      "Sodium": 616,
+      "Zinc": 1.5
+    }
+  },
+  {
+    "name": "Bagel, plain",
+    "category": "Grains",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "medium", "gram_weight": 105, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 257,
+      "Protein": 10.3,
+      "Carbohydrate": 50.4,
+      "Fat": 1.6,
+      "Fiber": 2.3,
+      "Sugar": 6.3,
+      "Calcium": 36,
+      "Iron": 3.5,
+      "Magnesium": 36,
+      "Phosphorus": 114,
+      "Potassium": 148,
+      "Sodium": 553,
+      "Zinc": 0.9
+    }
+  },
+  {
+    "name": "Crackers, saltines",
+    "category": "Grains",
+    "servingSizes": [
+      { "amount": 5, "unit_name": "crackers", "gram_weight": 15, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 418,
+      "Protein": 10.5,
+      "Carbohydrate": 70.7,
+      "Fat": 9.4,
+      "Fiber": 2.4,
+      "Sugar": 2.9,
+      "Calcium": 26,
+      "Iron": 4.7,
+      "Magnesium": 32,
+      "Phosphorus": 120,
+      "Potassium": 140,
+      "Sodium": 1310,
+      "Zinc": 0.8
+    }
+  },
+  {
+    "name": "Popcorn, air-popped",
+    "category": "Grains",
+    "servingSizes": [
+      { "amount": 3, "unit_name": "cups", "gram_weight": 24, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 387,
+      "Protein": 12.9,
+      "Carbohydrate": 77.9,
+      "Fat": 4.5,
+      "Fiber": 14.5,
+      "Sugar": 0.9,
+      "Calcium": 7,
+      "Iron": 2.8,
+      "Magnesium": 144,
+      "Phosphorus": 358,
+      "Potassium": 329,
+      "Sodium": 2,
+      "Zinc": 2.3
+    }
+  },
+  {
+    "name": "Almonds",
+    "category": "Nuts & Seeds",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "oz", "gram_weight": 28, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 579,
+      "Protein": 21.15,
+      "Carbohydrate": 21.55,
+      "Fat": 49.93,
+      "Fiber": 12.5,
+      "Sugar": 4.35,
+      "Calcium": 269,
+      "Iron": 3.71,
+      "Magnesium": 270,
+      "Phosphorus": 481,
+      "Potassium": 733,
+      "Sodium": 1,
+      "Zinc": 3.12
+    }
+  },
+  {
+    "name": "Walnuts",
+    "category": "Nuts & Seeds",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "oz", "gram_weight": 28, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 654,
+      "Protein": 15.23,
+      "Carbohydrate": 13.71,
+      "Fat": 65.21,
+      "Fiber": 6.7,
+      "Sugar": 2.61,
+      "Calcium": 98,
+      "Iron": 2.91,
+      "Magnesium": 158,
+      "Phosphorus": 346,
+      "Potassium": 441,
+      "Sodium": 2,
+      "Zinc": 3.09
+    }
+  },
+  {
+    "name": "Peanuts",
+    "category": "Nuts & Seeds",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "oz", "gram_weight": 28, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 567,
+      "Protein": 25.8,
+      "Carbohydrate": 16.13,
+      "Fat": 49.24,
+      "Fiber": 8.5,
+      "Sugar": 4.72,
+      "Calcium": 92,
+      "Iron": 4.58,
+      "Magnesium": 168,
+      "Phosphorus": 376,
+      "Potassium": 705,
+      "Sodium": 18,
+      "Zinc": 3.27
+    }
+  },
+  {
+    "name": "Cashews",
+    "category": "Nuts & Seeds",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "oz", "gram_weight": 28, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 553,
+      "Protein": 18.22,
+      "Carbohydrate": 30.19,
+      "Fat": 43.85,
+      "Fiber": 3.3,
+      "Sugar": 5.91,
+      "Calcium": 37,
+      "Iron": 6.68,
+      "Magnesium": 292,
+      "Phosphorus": 593,
+      "Potassium": 660,
+      "Sodium": 12,
+      "Zinc": 5.78
+    }
+  },
+  {
+    "name": "Sunflower seeds",
+    "category": "Nuts & Seeds",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "oz", "gram_weight": 28, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 584,
+      "Protein": 20.78,
+      "Carbohydrate": 20,
+      "Fat": 51.46,
+      "Fiber": 8.6,
+      "Sugar": 2.62,
+      "Calcium": 78,
+      "Iron": 5.25,
+      "Magnesium": 325,
+      "Phosphorus": 660,
+      "Potassium": 645,
+      "Sodium": 9,
+      "Zinc": 5.29
+    }
+  },
+  {
+    "name": "Chia seeds",
+    "category": "Nuts & Seeds",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "tbsp", "gram_weight": 12, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 486,
+      "Protein": 16.54,
+      "Carbohydrate": 42.12,
+      "Fat": 30.74,
+      "Fiber": 34.4,
+      "Sugar": 0,
+      "Calcium": 631,
+      "Iron": 7.72,
+      "Magnesium": 335,
+      "Phosphorus": 860,
+      "Potassium": 407,
+      "Sodium": 16,
+      "Zinc": 4.58
+    }
+  },
+  {
+    "name": "Flax seeds",
+    "category": "Nuts & Seeds",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "tbsp", "gram_weight": 10, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 534,
+      "Protein": 18.29,
+      "Carbohydrate": 28.88,
+      "Fat": 42.16,
+      "Fiber": 27.3,
+      "Sugar": 1.55,
+      "Calcium": 255,
+      "Iron": 5.73,
+      "Magnesium": 392,
+      "Phosphorus": 642,
+      "Potassium": 813,
+      "Sodium": 30,
+      "Zinc": 4.34
+    }
+  },
+  {
+    "name": "Pumpkin seeds",
+    "category": "Nuts & Seeds",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "oz", "gram_weight": 28, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 559,
+      "Protein": 30.23,
+      "Carbohydrate": 10.71,
+      "Fat": 49.05,
+      "Fiber": 6.5,
+      "Sugar": 1.4,
+      "Calcium": 46,
+      "Iron": 8.82,
+      "Magnesium": 592,
+      "Phosphorus": 1233,
+      "Potassium": 809,
+      "Sodium": 7,
+      "Zinc": 7.81
+    }
+  },
+  {
+    "name": "Peanut butter",
+    "category": "Nuts & Seeds",
+    "servingSizes": [
+      { "amount": 2, "unit_name": "tbsp", "gram_weight": 32, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 588,
+      "Protein": 25.09,
+      "Carbohydrate": 19.56,
+      "Fat": 50.39,
+      "Fiber": 6,
+      "Sugar": 9.15,
+      "Calcium": 45,
+      "Iron": 1.74,
+      "Magnesium": 168,
+      "Phosphorus": 335,
+      "Potassium": 649,
+      "Sodium": 459,
+      "Zinc": 2.51
+    }
+  },
+  {
+    "name": "Almond butter",
+    "category": "Nuts & Seeds",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "tbsp", "gram_weight": 16, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 614,
+      "Protein": 21,
+      "Carbohydrate": 18.8,
+      "Fat": 55.5,
+      "Fiber": 10.5,
+      "Sugar": 4.4,
+      "Calcium": 347,
+      "Iron": 3.71,
+      "Magnesium": 270,
+      "Phosphorus": 481,
+      "Potassium": 733,
+      "Sodium": 26,
+      "Zinc": 3.12
+    }
+  },
+  {
+    "name": "Olive oil",
+    "category": "Fats & Oils",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "tbsp", "gram_weight": 14, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 884,
+      "Protein": 0,
+      "Carbohydrate": 0,
+      "Fat": 100,
+      "Fiber": 0,
+      "Sugar": 0,
+      "Calcium": 1,
+      "Iron": 0.56,
+      "Magnesium": 0,
+      "Phosphorus": 0,
+      "Potassium": 1,
+      "Sodium": 2,
+      "Zinc": 0
+    }
+  },
+  {
+    "name": "Butter",
+    "category": "Fats & Oils",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "tbsp", "gram_weight": 14, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 717,
+      "Protein": 0.85,
+      "Carbohydrate": 0.06,
+      "Fat": 81.11,
+      "Fiber": 0,
+      "Sugar": 0.06,
+      "Calcium": 24,
+      "Iron": 0.02,
+      "Magnesium": 2,
+      "Phosphorus": 24,
+      "Potassium": 24,
+      "Sodium": 643,
+      "Zinc": 0.09
+    }
+  },
+  {
+    "name": "Coconut oil",
+    "category": "Fats & Oils",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "tbsp", "gram_weight": 14, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 862,
+      "Protein": 0,
+      "Carbohydrate": 0,
+      "Fat": 100,
+      "Fiber": 0,
+      "Sugar": 0,
+      "Calcium": 1,
+      "Iron": 0.05,
+      "Magnesium": 0,
+      "Phosphorus": 0,
+      "Potassium": 0,
+      "Sodium": 0,
+      "Zinc": 0
+    }
+  },
+  {
+    "name": "Mayonnaise",
+    "category": "Fats & Oils",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "tbsp", "gram_weight": 14, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 680,
+      "Protein": 1.01,
+      "Carbohydrate": 0.57,
+      "Fat": 74.85,
+      "Fiber": 0,
+      "Sugar": 0.57,
+      "Calcium": 8,
+      "Iron": 0.16,
+      "Magnesium": 1,
+      "Phosphorus": 14,
+      "Potassium": 20,
+      "Sodium": 635,
+      "Zinc": 0.15
+    }
+  },
+  {
+    "name": "Cream cheese",
+    "category": "Fats & Oils",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "oz", "gram_weight": 28, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 342,
+      "Protein": 5.93,
+      "Carbohydrate": 4.07,
+      "Fat": 34.24,
+      "Fiber": 0,
+      "Sugar": 3.21,
+      "Calcium": 97,
+      "Iron": 0.04,
+      "Magnesium": 9,
+      "Phosphorus": 107,
+      "Potassium": 132,
+      "Sodium": 321,
+      "Zinc": 0.51
+    }
+  },
+  {
+    "name": "Orange juice",
+    "category": "Beverages",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 248, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 45,
+      "Protein": 0.7,
+      "Carbohydrate": 10.4,
+      "Fat": 0.2,
+      "Fiber": 0.2,
+      "Sugar": 8.4,
+      "Calcium": 11,
+      "Iron": 0.2,
+      "Magnesium": 10,
+      "Phosphorus": 17,
+      "Potassium": 200,
+      "Sodium": 1,
+      "Zinc": 0.09,
+      "Vitamin C": 50
+    }
+  },
+  {
+    "name": "Apple juice",
+    "category": "Beverages",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 248, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 46,
+      "Protein": 0.1,
+      "Carbohydrate": 11.3,
+      "Fat": 0.13,
+      "Fiber": 0.1,
+      "Sugar": 9.6,
+      "Calcium": 8,
+      "Iron": 0.12,
+      "Magnesium": 4,
+      "Phosphorus": 7,
+      "Potassium": 101,
+      "Sodium": 4,
+      "Zinc": 0.02,
+      "Vitamin C": 0.1
+    }
+  },
+  {
+    "name": "Coffee, brewed",
+    "category": "Beverages",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 237, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 1,
+      "Protein": 0.12,
+      "Carbohydrate": 0,
+      "Fat": 0,
+      "Fiber": 0,
+      "Sugar": 0,
+      "Calcium": 2,
+      "Iron": 0.01,
+      "Magnesium": 7,
+      "Phosphorus": 7,
+      "Potassium": 49,
+      "Sodium": 2,
+      "Zinc": 0.01
+    }
+  },
+  {
+    "name": "Tea, brewed black",
+    "category": "Beverages",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cup", "gram_weight": 237, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 1,
+      "Protein": 0,
+      "Carbohydrate": 0.32,
+      "Fat": 0,
+      "Fiber": 0,
+      "Sugar": 0,
+      "Calcium": 0,
+      "Iron": 0.02,
+      "Magnesium": 2,
+      "Phosphorus": 2,
+      "Potassium": 11,
+      "Sodium": 3,
+      "Zinc": 0
+    }
+  },
+  {
+    "name": "Soda, cola",
+    "category": "Beverages",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "can", "gram_weight": 355, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 41,
+      "Protein": 0,
+      "Carbohydrate": 10.6,
+      "Fat": 0,
+      "Fiber": 0,
+      "Sugar": 10.6,
+      "Calcium": 2,
+      "Iron": 0.01,
+      "Magnesium": 1,
+      "Phosphorus": 0,
+      "Potassium": 1,
+      "Sodium": 4,
+      "Zinc": 0
+    }
+  },
+  {
+    "name": "Dark chocolate, 70-85% cacao",
+    "category": "Snacks & Sweets",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "oz", "gram_weight": 28, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 598,
+      "Protein": 7.77,
+      "Carbohydrate": 45.9,
+      "Fat": 42.63,
+      "Fiber": 10.9,
+      "Sugar": 23.99,
+      "Calcium": 73,
+      "Iron": 11.9,
+      "Magnesium": 228,
+      "Phosphorus": 308,
+      "Potassium": 715,
+      "Sodium": 20,
+      "Zinc": 3.31
+    }
+  },
+  {
+    "name": "Milk chocolate",
+    "category": "Snacks & Sweets",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "bar", "gram_weight": 43, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 535,
+      "Protein": 7.65,
+      "Carbohydrate": 59.4,
+      "Fat": 29.66,
+      "Fiber": 3.4,
+      "Sugar": 51.46,
+      "Calcium": 189,
+      "Iron": 2.34,
+      "Magnesium": 63,
+      "Phosphorus": 206,
+      "Potassium": 372,
+      "Sodium": 79,
+      "Zinc": 2.3
+    }
+  },
+  {
+    "name": "Potato chips",
+    "category": "Snacks & Sweets",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "oz", "gram_weight": 28, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 536,
+      "Protein": 7,
+      "Carbohydrate": 52.9,
+      "Fat": 35.2,
+      "Fiber": 4.4,
+      "Sugar": 0.5,
+      "Calcium": 18,
+      "Iron": 1.3,
+      "Magnesium": 63,
+      "Phosphorus": 127,
+      "Potassium": 1275,
+      "Sodium": 525,
+      "Zinc": 0.9
+    }
+  },
+  {
+    "name": "Cookies, chocolate chip",
+    "category": "Snacks & Sweets",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "cookie", "gram_weight": 16, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 488,
+      "Protein": 5.7,
+      "Carbohydrate": 65.9,
+      "Fat": 22.3,
+      "Fiber": 2.3,
+      "Sugar": 39.4,
+      "Calcium": 32,
+      "Iron": 2.4,
+      "Magnesium": 23,
+      "Phosphorus": 97,
+      "Potassium": 172,
+      "Sodium": 362,
+      "Zinc": 0.6
+    }
+  },
+  {
+    "name": "Ice cream, vanilla",
+    "category": "Snacks & Sweets",
+    "servingSizes": [
+      { "amount": 0.5, "unit_name": "cup", "gram_weight": 66, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 207,
+      "Protein": 3.5,
+      "Carbohydrate": 23.6,
+      "Fat": 11,
+      "Fiber": 0.7,
+      "Sugar": 21.2,
+      "Calcium": 128,
+      "Iron": 0.07,
+      "Magnesium": 14,
+      "Phosphorus": 116,
+      "Potassium": 199,
+      "Sodium": 80,
+      "Zinc": 0.69
+    }
+  },
+  {
+    "name": "Honey",
+    "category": "Snacks & Sweets",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "tbsp", "gram_weight": 21, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 304,
+      "Protein": 0.3,
+      "Carbohydrate": 82.4,
+      "Fat": 0,
+      "Fiber": 0.2,
+      "Sugar": 82.12,
+      "Calcium": 6,
+      "Iron": 0.42,
+      "Magnesium": 2,
+      "Phosphorus": 4,
+      "Potassium": 52,
+      "Sodium": 4,
+      "Zinc": 0.22
+    }
+  },
+  {
+    "name": "Sugar, white granulated",
+    "category": "Snacks & Sweets",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "tsp", "gram_weight": 4, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 387,
+      "Protein": 0,
+      "Carbohydrate": 100,
+      "Fat": 0,
+      "Fiber": 0,
+      "Sugar": 100,
+      "Calcium": 1,
+      "Iron": 0.05,
+      "Magnesium": 0,
+      "Phosphorus": 0,
+      "Potassium": 2,
+      "Sodium": 1,
+      "Zinc": 0
+    }
+  },
+  {
+    "name": "Maple syrup",
+    "category": "Snacks & Sweets",
+    "servingSizes": [
+      { "amount": 0.25, "unit_name": "cup", "gram_weight": 80, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 260,
+      "Protein": 0.04,
+      "Carbohydrate": 67,
+      "Fat": 0.06,
+      "Fiber": 0,
+      "Sugar": 60.46,
+      "Calcium": 102,
+      "Iron": 0.07,
+      "Magnesium": 21,
+      "Phosphorus": 2,
+      "Potassium": 212,
+      "Sodium": 12,
+      "Zinc": 2.74
+    }
+  },
+  {
+    "name": "Granola bar, chewy",
+    "category": "Snacks & Sweets",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "bar", "gram_weight": 42, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 471,
+      "Protein": 5.4,
+      "Carbohydrate": 66.3,
+      "Fat": 20.7,
+      "Fiber": 3.3,
+      "Sugar": 33.1,
+      "Calcium": 33,
+      "Iron": 2.4,
+      "Magnesium": 42,
+      "Phosphorus": 120,
+      "Potassium": 172,
+      "Sodium": 286,
+      "Zinc": 0.9
+    }
+  },
+  {
+    "name": "Yogurt, plain whole milk",
+    "category": "Proteins",
+    "servingSizes": [
+      { "amount": 1, "unit_name": "container", "gram_weight": 245, "is_default": true },
+      { "amount": 100, "unit_name": "g", "gram_weight": 100 }
+    ],
+    "nutrients": {
+      "Calories": 61,
+      "Protein": 3.47,
+      "Carbohydrate": 4.66,
+      "Fat": 3.25,
+      "Fiber": 0,
+      "Sugar": 4.66,
+      "Calcium": 110,
+      "Iron": 0.05,
+      "Magnesium": 11,
+      "Phosphorus": 95,
+      "Potassium": 155,
+      "Sodium": 46,
+      "Zinc": 0.59
+    }
+  }
+]

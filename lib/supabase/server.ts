@@ -18,8 +18,7 @@ export async function createClient() {
               cookieStore.set(name, value, options)
             );
           } catch {
-            // This can be ignored in server components.
-            // The middleware will handle refreshing the auth token.
+            // Ignored in server components - middleware handles auth token refresh
           }
         },
       },

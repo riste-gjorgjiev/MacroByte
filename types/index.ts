@@ -1,5 +1,5 @@
 export interface Profile {
-  id: string; // UUID referencing auth.users
+  id: string;
   email: string;
   age: number | null;
   sex: 'male' | 'female' | null;
@@ -40,11 +40,11 @@ export interface FoodNutrient {
   id: number;
   food_id: number;
   nutrient_id: number;
-  amount: number; // Amount per 100g of food
+  amount: number;
 }
 
 export interface LogEntry {
-  id: string; // UUID
+  id: string;
   user_id: string;
   food_id: number;
   serving_size_id: number | null;
@@ -52,16 +52,16 @@ export interface LogEntry {
   logged_unit: string;
   gram_equivalent: number;
   meal: 'breakfast' | 'lunch' | 'dinner' | 'snack' | null;
-  logged_date: string; // ISO date string (YYYY-MM-DD)
+  logged_date: string;
   logged_at: string;
   created_at: string;
   updated_at: string;
 }
 
 export interface DailySummary {
-  id: string; // UUID
+  id: string;
   user_id: string;
-  date: string; // ISO date string
+  date: string;
   nutrient_id: number;
   total_amount: number;
   unit_name: string;
@@ -77,8 +77,6 @@ export interface UserTarget {
   unit_name: string;
 }
 
-// Composite types for API responses
-
 export interface FoodWithNutrients extends Food {
   serving_sizes?: ServingSize[];
   food_nutrients?: (FoodNutrient & { nutrients?: Nutrient })[];
@@ -92,8 +90,6 @@ export interface LogEntryWithFood extends LogEntry {
   foods?: Food;
   serving_sizes?: ServingSize;
 }
-
-// Form/input types
 
 export interface LogEntryInput {
   food_id: number;
@@ -111,8 +107,6 @@ export interface ProfileInput {
   weight_kg: number | null;
   diet_type: string;
 }
-
-// Dashboard display types
 
 export interface NutrientDisplay {
   nutrient: Nutrient;
