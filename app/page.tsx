@@ -15,6 +15,17 @@ export default async function HomePage({searchParams}: { searchParams: Promise<{
         redirect('/auth/login');
     }
 
+    // Check if user has completed onboarding
+    const { data: profile } = await supabase
+        .from('profiles')
+        .select('onboarding_completed')
+        .eq('id', user.id)
+        .single();
+
+    if (!profile?.onboarding_completed) {
+        redirect('/onboarding');
+    }
+
     const params = await searchParams;
     const date = params.date || new Date().toISOString().split('T')[0];
 
@@ -25,11 +36,9 @@ export default async function HomePage({searchParams}: { searchParams: Promise<{
                     <h1 className="text-2xl font-bold">Nutrition Dashboard</h1>
                     <DateNavigator currentDate={date}/>
                 </div>
-                <Button asChild>
-                    <Link href="/foods">
-                        + Add Food
-                    </Link>
-                </Button>
+                <Link href="/foods">
+                    <Button>+ Add Food</Button>
+                </Link>
             </div>
 
             <div>

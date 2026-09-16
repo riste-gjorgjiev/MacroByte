@@ -23,6 +23,10 @@ export default function ProfilePage() {
   const [age, setAge] = useState('');
   const [sex, setSex] = useState<string>('');
   const [weight, setWeight] = useState('');
+  const [height, setHeight] = useState('');
+  const [activityLevel, setActivityLevel] = useState('');
+  const [weightGoal, setWeightGoal] = useState('');
+  const [goalRate, setGoalRate] = useState('');
   const [dietType, setDietType] = useState('omnivore');
   const [success, setSuccess] = useState('');
 
@@ -31,6 +35,10 @@ export default function ProfilePage() {
       setAge(profile.age?.toString() || '');
       setSex(profile.sex || '');
       setWeight(profile.weight_kg?.toString() || '');
+      setHeight(profile.height_cm?.toString() || '');
+      setActivityLevel(profile.activity_level || '');
+      setWeightGoal(profile.weight_goal_kg?.toString() || '');
+      setGoalRate(profile.goal_rate_kg_per_week?.toString() || '0');
       setDietType(profile.diet_type || 'omnivore');
     }
   }, [profile]);
@@ -44,6 +52,10 @@ export default function ProfilePage() {
         age: age ? parseInt(age) : null,
         sex: sex as 'male' | 'female' | null,
         weight_kg: weight ? parseFloat(weight) : null,
+        height_cm: height ? parseFloat(height) : null,
+        activity_level: activityLevel || null,
+        weight_goal_kg: weightGoal ? parseFloat(weightGoal) : null,
+        goal_rate_kg_per_week: goalRate ? parseFloat(goalRate) : 0,
         diet_type: dietType,
       });
       toast.success('Profile updated successfully!');
@@ -105,6 +117,16 @@ export default function ProfilePage() {
       'vitamin b12': 18,
     };
     return nutrientMap[name] || null;
+  };
+
+  const formatActivityLevel = (level: string): string => {
+    if (!level) return '';
+    return level.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  };
+
+  const formatDietType = (diet: string): string => {
+    if (!diet) return '';
+    return diet.charAt(0).toUpperCase() + diet.slice(1);
   };
 
   if (profileLoading || targetsLoading) {
@@ -198,10 +220,69 @@ export default function ProfilePage() {
             </div>
 
             <div className="space-y-2">
+              <Label htmlFor="height">Height (cm)</Label>
+              <Input
+                id="height"
+                type="number"
+                step="0.1"
+                placeholder="Enter your height"
+                value={height}
+                onChange={(e) => setHeight(e.target.value)}
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="activity">Activity Level</Label>
+              <Select value={activityLevel} onValueChange={setActivityLevel}>
+                <SelectTrigger id="activity">
+                  <SelectValue placeholder="Select activity level">
+                    {activityLevel ? formatActivityLevel(activityLevel) : undefined}
+                  </SelectValue>
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="sedentary">Sedentary</SelectItem>
+                  <SelectItem value="lightly_active">Lightly Active</SelectItem>
+                  <SelectItem value="moderately_active">Moderately Active</SelectItem>
+                  <SelectItem value="very_active">Very Active</SelectItem>
+                  <SelectItem value="custom">Custom</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="weightGoal">Weight Goal (kg)</Label>
+              <Input
+                id="weightGoal"
+                type="number"
+                step="0.1"
+                placeholder="Enter your weight goal"
+                value={weightGoal}
+                onChange={(e) => setWeightGoal(e.target.value)}
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="goalRate">Goal Rate (kg/week)</Label>
+              <Input
+                id="goalRate"
+                type="number"
+                step="0.25"
+                placeholder="0 for maintain, negative for lose, positive for gain"
+                value={goalRate}
+                onChange={(e) => setGoalRate(e.target.value)}
+              />
+              <p className="text-xs text-muted-foreground">
+                Use negative values to lose weight (e.g., -0.5), positive to gain (e.g., 0.25), or 0 to maintain
+              </p>
+            </div>
+
+            <div className="space-y-2">
               <Label htmlFor="diet">Diet Type</Label>
               <Select value={dietType} onValueChange={setDietType}>
                 <SelectTrigger id="diet">
-                  <SelectValue />
+                  <SelectValue>
+                    {dietType ? formatDietType(dietType) : undefined}
+                  </SelectValue>
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="omnivore">Omnivore</SelectItem>

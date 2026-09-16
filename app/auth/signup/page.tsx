@@ -46,7 +46,9 @@ export default function SignupPage() {
       setError(error.message);
       setLoading(false);
     } else {
-      router.push('/auth/login?message=check_email');
+      // Store email for onboarding
+      localStorage.setItem('onboarding_profile', JSON.stringify({ email }));
+      router.push('/onboarding/profile');
     }
   };
 

@@ -16,15 +16,15 @@ export async function Header() {
 
         {user && (
           <nav className="flex items-center gap-2">
-            <Button asChild variant="ghost" size="sm">
-              <Link href="/">Dashboard</Link>
-            </Button>
-            <Button asChild variant="ghost" size="sm">
-              <Link href="/foods">Foods</Link>
-            </Button>
-            <Button asChild variant="ghost" size="sm">
-              <Link href="/profile">Profile</Link>
-            </Button>
+            <Link href="/">
+              <Button variant="ghost" size="sm">Dashboard</Button>
+            </Link>
+            <Link href="/foods">
+              <Button variant="ghost" size="sm">Foods</Button>
+            </Link>
+            <Link href="/profile">
+              <Button variant="ghost" size="sm">Profile</Button>
+            </Link>
             <ThemeToggle />
             <form action="/auth/logout">
               <Button type="submit" variant="outline" size="sm">

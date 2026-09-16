@@ -1,10 +1,16 @@
 export interface Profile {
   id: string;
   email: string;
+  first_name: string | null;
   age: number | null;
   sex: 'male' | 'female' | null;
   weight_kg: number | null;
+  height_cm: number | null;
+  activity_level: 'sedentary' | 'lightly_active' | 'moderately_active' | 'very_active' | 'custom' | null;
+  weight_goal_kg: number | null;
+  goal_rate_kg_per_week: number | null;
   diet_type: string;
+  onboarding_completed: boolean;
   created_at: string;
   updated_at: string;
 }
@@ -105,6 +111,10 @@ export interface ProfileInput {
   age: number | null;
   sex: 'male' | 'female' | null;
   weight_kg: number | null;
+  height_cm: number | null;
+  activity_level: 'sedentary' | 'lightly_active' | 'moderately_active' | 'very_active' | 'custom' | null;
+  weight_goal_kg: number | null;
+  goal_rate_kg_per_week: number | null;
   diet_type: string;
 }
 

@@ -36,7 +36,7 @@ export async function middleware(request: NextRequest) {
 
   const { pathname } = request.nextUrl;
 
-  if (!user && !pathname.startsWith('/auth')) {
+  if (!user && !pathname.startsWith('/auth') && !pathname.startsWith('/onboarding')) {
     const url = request.nextUrl.clone();
     url.pathname = '/auth/login';
     return NextResponse.redirect(url);
@@ -46,6 +46,21 @@ export async function middleware(request: NextRequest) {
     const url = request.nextUrl.clone();
     url.pathname = '/';
     return NextResponse.redirect(url);
+  }
+
+  // Check if user has completed onboarding
+  if (user && pathname.startsWith('/onboarding')) {
+    const { data: profile } = await supabase
+      .from('profiles')
+      .select('onboarding_completed')
+      .eq('id', user.id)
+      .single();
+
+    if (profile?.onboarding_completed) {
+      const url = request.nextUrl.clone();
+      url.pathname = '/';
+      return NextResponse.redirect(url);
+    }
   }
 
   return supabaseResponse;
