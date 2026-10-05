@@ -10,6 +10,7 @@ export interface Profile {
   weight_goal_kg: number | null;
   goal_rate_kg_per_week: number | null;
   diet_type: string;
+  water_goal_ml: number | null;
   onboarding_completed: boolean;
   created_at: string;
   updated_at: string;
@@ -116,6 +117,7 @@ export interface ProfileInput {
   weight_goal_kg: number | null;
   goal_rate_kg_per_week: number | null;
   diet_type: string;
+  water_goal_ml: number | null;
 }
 
 export interface NutrientDisplay {

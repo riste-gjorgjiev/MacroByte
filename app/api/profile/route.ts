@@ -31,7 +31,7 @@ export async function PATCH(request: NextRequest) {
   }
 
   const body = await request.json();
-  const { age, sex, weight_kg, height_cm, activity_level, weight_goal_kg, goal_rate_kg_per_week, diet_type } = body;
+  const { age, sex, weight_kg, height_cm, activity_level, weight_goal_kg, goal_rate_kg_per_week, diet_type, water_goal_ml } = body;
 
   const { data: profile, error } = await supabase
     .from('profiles')
@@ -44,6 +44,7 @@ export async function PATCH(request: NextRequest) {
       weight_goal_kg,
       goal_rate_kg_per_week,
       diet_type,
+      water_goal_ml,
       updated_at: new Date().toISOString(),
     })
     .eq('id', user.id)

@@ -64,17 +64,18 @@ export function DateNavigator({ currentDate }: DateNavigatorProps) {
         size="icon"
         onClick={() => navigateDate(-1)}
         aria-label="Previous day"
+        className="border-gray-200 hover:bg-gray-50"
       >
         <ChevronLeft className="h-4 w-4" />
       </Button>
 
       <div className="flex items-center gap-2">
-        <Calendar className="h-4 w-4 text-muted-foreground" />
+        <Calendar className="h-4 w-4 text-gray-500" />
         <Input
           type="date"
           value={currentDate}
           onChange={handleDateChange}
-          className="w-[180px]"
+          className="w-[180px] border-gray-200"
         />
       </div>
 
@@ -83,17 +84,18 @@ export function DateNavigator({ currentDate }: DateNavigatorProps) {
         size="icon"
         onClick={() => navigateDate(1)}
         aria-label="Next day"
+        className="border-gray-200 hover:bg-gray-50"
       >
         <ChevronRight className="h-4 w-4" />
       </Button>
 
       {!isToday && (
-        <Button variant="ghost" size="sm" onClick={goToToday}>
+        <Button variant="ghost" size="sm" onClick={goToToday} className="text-gray-600 hover:text-gray-900">
           Today
         </Button>
       )}
 
-      <span className="text-sm text-muted-foreground ml-2">{formattedDate}</span>
+      <span className="text-sm text-gray-500 ml-2">{formattedDate}</span>
     </div>
   );
 }

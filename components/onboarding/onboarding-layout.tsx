@@ -16,6 +16,7 @@ interface OnboardingLayoutProps {
   onSkip?: () => void;
   nextDisabled?: boolean;
   nextLabel?: string;
+  backHref?: string;
 }
 
 export function OnboardingLayout({
@@ -30,21 +31,22 @@ export function OnboardingLayout({
   onSkip,
   nextDisabled = false,
   nextLabel = 'NEXT',
+  backHref = '/onboarding',
 }: OnboardingLayoutProps) {
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
-      <div className="border-b bg-card">
-        <div className="container mx-auto max-w-2xl px-4 py-4">
+      <div className="border-b border-gray-200 bg-white">
+        <div className="mx-auto max-w-2xl px-4 py-4">
           <div className="flex items-center justify-between">
             {showBack ? (
-              <Link href="/onboarding" className="text-foreground hover:opacity-70">
+              <Link href={backHref} className="text-gray-700 hover:text-gray-900">
                 <ArrowLeft className="h-6 w-6" />
               </Link>
             ) : (
               <div className="w-6" />
             )}
-            <Link href="/" className="text-2xl font-bold text-foreground">
+            <Link href="/" className="text-2xl font-bold text-gray-900">
               MacroByte
             </Link>
             <div className="w-6" />
@@ -53,9 +55,9 @@ export function OnboardingLayout({
       </div>
 
       {/* Progress Bar */}
-      <div className="bg-card border-b">
-        <div className="container mx-auto max-w-2xl px-4 py-3">
-          <div className="text-center text-sm text-muted-foreground mb-2">
+      <div className="bg-white border-b border-gray-200">
+        <div className="mx-auto max-w-2xl px-4 py-3">
+          <div className="text-center text-sm text-gray-500 mb-2">
             STEP {currentStep}
           </div>
           <div className="flex gap-1">
@@ -63,7 +65,7 @@ export function OnboardingLayout({
               <div
                 key={i}
                 className={`h-1.5 flex-1 rounded-full transition-colors ${
-                  i < currentStep ? 'bg-primary' : 'bg-muted'
+                  i < currentStep ? 'bg-gray-900' : 'bg-gray-200'
                 }`}
               />
             ))}
@@ -72,11 +74,11 @@ export function OnboardingLayout({
       </div>
 
       {/* Content */}
-      <div className="flex-1 container mx-auto max-w-2xl px-4 py-8">
+      <div className="flex-1 mx-auto max-w-2xl px-4 py-8">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold mb-2">{title}</h1>
+          <h1 className="text-3xl font-bold mb-2 text-gray-900">{title}</h1>
           {subtitle && (
-            <p className="text-muted-foreground text-lg">{subtitle}</p>
+            <p className="text-gray-500 text-lg">{subtitle}</p>
           )}
         </div>
 
@@ -86,16 +88,16 @@ export function OnboardingLayout({
       </div>
 
       {/* Footer Buttons */}
-      <div className="border-t bg-card p-4">
-        <div className="container mx-auto max-w-2xl space-y-2">
+      <div className="border-t border-gray-200 bg-white p-4">
+        <div className="mx-auto max-w-2xl space-y-2">
           {onNext && (
             <button
               onClick={onNext}
               disabled={nextDisabled}
               className={`w-full py-4 rounded-full font-semibold text-lg transition-colors ${
                 nextDisabled
-                  ? 'bg-muted text-muted-foreground cursor-not-allowed'
-                  : 'bg-foreground text-background hover:opacity-90'
+                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                  : 'bg-gray-900 text-white hover:bg-gray-800'
               }`}
             >
               {nextLabel}
@@ -104,7 +106,7 @@ export function OnboardingLayout({
           {showSkip && onSkip && (
             <button
               onClick={onSkip}
-              className="w-full py-3 text-foreground font-medium hover:opacity-70"
+              className="w-full py-3 text-gray-700 font-medium hover:text-gray-900"
             >
               SKIP
             </button>

@@ -35,19 +35,19 @@ export function WeightGoalStep() {
       nextDisabled={!isValid}
     >
       <div className="max-w-md mx-auto">
-        <div className="bg-card border rounded-lg p-8 text-center">
-          <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+        <div className="bg-white border border-gray-200 rounded-lg p-8 text-center">
+          <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
             <span className="text-3xl"></span>
           </div>
-          <h3 className="text-xl font-semibold mb-6">What is your weight goal?</h3>
+          <h3 className="text-xl font-semibold mb-6 text-gray-900">What is your weight goal?</h3>
           <Input
             type="number"
             placeholder="--"
             value={weightGoal}
             onChange={(e) => setWeightGoal(e.target.value)}
-            className="h-16 text-2xl text-center max-w-xs mx-auto"
+            className="h-16 text-2xl text-center max-w-xs mx-auto border-gray-200"
           />
-          <p className="text-muted-foreground mt-2">kg</p>
+          <p className="text-gray-500 mt-2">kg</p>
         </div>
       </div>
     </OnboardingLayout>

@@ -1,32 +1,23 @@
-'use client';
+import { createClient } from '@/lib/supabase/server';
+import { redirect } from 'next/navigation';
+import { OnboardingClient } from '@/components/onboarding/onboarding-client';
 
-import { useSearchParams } from 'next/navigation';
-import { WelcomeStep } from '@/components/onboarding/steps/welcome-step';
-import { AccountStep } from '@/components/onboarding/steps/account-step';
-import { ProfileStep } from '@/components/onboarding/steps/profile-step';
-import { ActivityStep } from '@/components/onboarding/steps/activity-step';
-import { WeightGoalStep } from '@/components/onboarding/steps/weight-goal-step';
-import { GoalRateStep } from '@/components/onboarding/steps/goal-rate-step';
-import { OverviewStep } from '@/components/onboarding/steps/overview-step';
+export default async function OnboardingPage({ searchParams }: { searchParams: Promise<{ step?: string }> }) {
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
 
-export default function OnboardingPage() {
-  const searchParams = useSearchParams();
-  const step = searchParams.get('step') || 'welcome';
-
-  switch (step) {
-    case 'account':
-      return <AccountStep />;
-    case 'profile':
-      return <ProfileStep />;
-    case 'activity':
-      return <ActivityStep />;
-    case 'weight-goal':
-      return <WeightGoalStep />;
-    case 'goal-rate':
-      return <GoalRateStep />;
-    case 'overview':
-      return <OverviewStep />;
-    default:
-      return <WelcomeStep />;
+  if (!user) {
+    redirect('/auth/login');
   }
+
+  const params = await searchParams;
+  const step = params.step || 'welcome';
+
+  // If user is logged in and no step is specified (or welcome/account step),
+  // redirect to profile step since they're already authenticated
+  if (!params.step || step === 'welcome' || step === 'account') {
+    redirect('/onboarding?step=profile');
+  }
+
+  return <OnboardingClient step={step} />;
 }

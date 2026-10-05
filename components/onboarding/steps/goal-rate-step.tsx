@@ -48,28 +48,28 @@ export function GoalRateStep() {
       showSkip
     >
       <div className="max-w-md mx-auto">
-        <div className="bg-card border rounded-lg p-8 text-center">
-          <h3 className="text-xl font-semibold mb-2">{getGoalLabel()}</h3>
-          <p className="text-muted-foreground mb-6">{weightGoal} kg</p>
+        <div className="bg-white border border-gray-200 rounded-lg p-8 text-center">
+          <h3 className="text-xl font-semibold mb-2 text-gray-900">{getGoalLabel()}</h3>
+          <p className="text-gray-500 mb-6">{weightGoal} kg</p>
 
-          <div className="flex items-center justify-center gap-4 bg-muted/50 rounded-lg p-4">
+          <div className="flex items-center justify-center gap-4 bg-gray-50 rounded-lg p-4">
             <Button
               variant="outline"
               size="icon"
-              className="h-12 w-12 rounded-full"
+              className="h-12 w-12 rounded-full border-gray-200"
               onClick={() => setGoalRate(Math.max(-1, goalRate - 0.25))}
             >
               <Minus className="h-6 w-6" />
             </Button>
 
-            <div className="text-xl font-semibold min-w-[200px]">
+            <div className="text-xl font-semibold min-w-[200px] text-gray-900">
               {getRateLabel()}
             </div>
 
             <Button
               variant="outline"
               size="icon"
-              className="h-12 w-12 rounded-full"
+              className="h-12 w-12 rounded-full border-gray-200"
               onClick={() => setGoalRate(Math.min(1, goalRate + 0.25))}
             >
               <Plus className="h-6 w-6" />

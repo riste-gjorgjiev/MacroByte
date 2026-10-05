@@ -28,6 +28,7 @@ export default function ProfilePage() {
   const [weightGoal, setWeightGoal] = useState('');
   const [goalRate, setGoalRate] = useState('');
   const [dietType, setDietType] = useState('omnivore');
+  const [waterGoal, setWaterGoal] = useState('');
   const [success, setSuccess] = useState('');
 
   useEffect(() => {
@@ -40,6 +41,7 @@ export default function ProfilePage() {
       setWeightGoal(profile.weight_goal_kg?.toString() || '');
       setGoalRate(profile.goal_rate_kg_per_week?.toString() || '0');
       setDietType(profile.diet_type || 'omnivore');
+      setWaterGoal(profile.water_goal_ml?.toString() || '2000');
     }
   }, [profile]);
 
@@ -57,6 +59,7 @@ export default function ProfilePage() {
         weight_goal_kg: weightGoal ? parseFloat(weightGoal) : null,
         goal_rate_kg_per_week: goalRate ? parseFloat(goalRate) : 0,
         diet_type: dietType,
+        water_goal_ml: waterGoal ? parseInt(waterGoal) : 2000,
       });
       toast.success('Profile updated successfully!');
       setSuccess('Profile updated successfully!');
@@ -131,7 +134,7 @@ export default function ProfilePage() {
 
   if (profileLoading || targetsLoading) {
     return (
-      <div className="container mx-auto max-w-2xl p-4 space-y-6">
+      <div className="space-y-6">
         <Card>
           <CardHeader>
             <Skeleton className="h-6 w-24" />
@@ -147,164 +150,171 @@ export default function ProfilePage() {
             <Skeleton className="h-10 w-full" />
           </CardContent>
         </Card>
-        <Card>
-          <CardHeader>
-            <Skeleton className="h-6 w-32" />
-            <Skeleton className="h-4 w-64" />
-          </CardHeader>
-          <CardContent className="space-y-3">
-            {[...Array(5)].map((_, i) => (
-              <div key={i} className="flex items-center justify-between rounded-lg border p-3">
-                <div className="space-y-2">
-                  <Skeleton className="h-4 w-24" />
-                  <Skeleton className="h-3 w-32" />
-                </div>
-                <Skeleton className="h-8 w-16" />
-              </div>
-            ))}
-          </CardContent>
-        </Card>
       </div>
     );
   }
 
   return (
-    <div className="container mx-auto max-w-2xl p-4 space-y-6">
-      <Card>
+    <div className="space-y-6">
+      <h1 className="text-3xl font-bold text-gray-900">Profile</h1>
+
+      <Card className="border-gray-200">
         <CardHeader>
-          <CardTitle>Profile</CardTitle>
-          <CardDescription>Update your personal information</CardDescription>
+          <CardTitle className="text-xl font-semibold text-gray-900">Personal Information</CardTitle>
+          <CardDescription className="text-gray-500">Update your personal information</CardDescription>
         </CardHeader>
         <CardContent>
-          <form onSubmit={handleProfileSubmit} className="space-y-4">
+          <form onSubmit={handleProfileSubmit} className="space-y-6">
             {success && (
-              <div className="rounded-md bg-primary/10 p-3 text-sm text-primary">
+              <div className="rounded-lg bg-green-50 border border-green-200 p-4 text-sm text-green-700">
                 {success}
               </div>
             )}
 
-            <div className="space-y-2">
-              <Label htmlFor="age">Age</Label>
-              <Input
-                id="age"
-                type="number"
-                placeholder="Enter your age"
-                value={age}
-                onChange={(e) => setAge(e.target.value)}
-              />
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="age" className="text-sm font-medium text-gray-700">Age</Label>
+                <Input
+                  id="age"
+                  type="number"
+                  placeholder="Enter your age"
+                  value={age}
+                  onChange={(e) => setAge(e.target.value)}
+                  className="border-gray-200"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="sex" className="text-sm font-medium text-gray-700">Sex</Label>
+                <Select value={sex} onValueChange={setSex}>
+                  <SelectTrigger id="sex" className="border-gray-200">
+                    <SelectValue placeholder="Select your sex" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="male">Male</SelectItem>
+                    <SelectItem value="female">Female</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="weight" className="text-sm font-medium text-gray-700">Weight (kg)</Label>
+                <Input
+                  id="weight"
+                  type="number"
+                  step="0.1"
+                  placeholder="Enter your weight"
+                  value={weight}
+                  onChange={(e) => setWeight(e.target.value)}
+                  className="border-gray-200"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="height" className="text-sm font-medium text-gray-700">Height (cm)</Label>
+                <Input
+                  id="height"
+                  type="number"
+                  step="0.1"
+                  placeholder="Enter your height"
+                  value={height}
+                  onChange={(e) => setHeight(e.target.value)}
+                  className="border-gray-200"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="activity" className="text-sm font-medium text-gray-700">Activity Level</Label>
+                <Select value={activityLevel} onValueChange={setActivityLevel}>
+                  <SelectTrigger id="activity" className="border-gray-200">
+                    <SelectValue placeholder="Select activity level">
+                      {activityLevel ? formatActivityLevel(activityLevel) : undefined}
+                    </SelectValue>
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="sedentary">Sedentary</SelectItem>
+                    <SelectItem value="lightly_active">Lightly Active</SelectItem>
+                    <SelectItem value="moderately_active">Moderately Active</SelectItem>
+                    <SelectItem value="very_active">Very Active</SelectItem>
+                    <SelectItem value="custom">Custom</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="diet" className="text-sm font-medium text-gray-700">Diet Type</Label>
+                <Select value={dietType} onValueChange={setDietType}>
+                  <SelectTrigger id="diet" className="border-gray-200">
+                    <SelectValue>
+                      {dietType ? formatDietType(dietType) : undefined}
+                    </SelectValue>
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="omnivore">Omnivore</SelectItem>
+                    <SelectItem value="vegetarian">Vegetarian</SelectItem>
+                    <SelectItem value="vegan">Vegan</SelectItem>
+                    <SelectItem value="keto">Keto</SelectItem>
+                    <SelectItem value="paleo">Paleo</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="weightGoal" className="text-sm font-medium text-gray-700">Weight Goal (kg)</Label>
+                <Input
+                  id="weightGoal"
+                  type="number"
+                  step="0.1"
+                  placeholder="Enter your weight goal"
+                  value={weightGoal}
+                  onChange={(e) => setWeightGoal(e.target.value)}
+                  className="border-gray-200"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="goalRate" className="text-sm font-medium text-gray-700">Goal Rate (kg/week)</Label>
+                <Input
+                  id="goalRate"
+                  type="number"
+                  step="0.25"
+                  placeholder="0 for maintain"
+                  value={goalRate}
+                  onChange={(e) => setGoalRate(e.target.value)}
+                  className="border-gray-200"
+                />
+                <p className="text-xs text-gray-500">
+                  Negative to lose, positive to gain, 0 to maintain
+                </p>
+              </div>
+
+              <div className="space-y-2 col-span-2">
+                <Label htmlFor="waterGoal" className="text-sm font-medium text-gray-700">Daily Water Goal (ml)</Label>
+                <Input
+                  id="waterGoal"
+                  type="number"
+                  placeholder="2000"
+                  value={waterGoal}
+                  onChange={(e) => setWaterGoal(e.target.value)}
+                  className="border-gray-200"
+                />
+                <p className="text-xs text-gray-500">
+                  Recommended: 2000-3000ml per day
+                </p>
+              </div>
             </div>
 
-            <div className="space-y-2">
-              <Label htmlFor="sex">Sex</Label>
-              <Select value={sex} onValueChange={setSex}>
-                <SelectTrigger id="sex">
-                  <SelectValue placeholder="Select your sex" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="male">Male</SelectItem>
-                  <SelectItem value="female">Female</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="weight">Weight (kg)</Label>
-              <Input
-                id="weight"
-                type="number"
-                step="0.1"
-                placeholder="Enter your weight"
-                value={weight}
-                onChange={(e) => setWeight(e.target.value)}
-              />
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="height">Height (cm)</Label>
-              <Input
-                id="height"
-                type="number"
-                step="0.1"
-                placeholder="Enter your height"
-                value={height}
-                onChange={(e) => setHeight(e.target.value)}
-              />
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="activity">Activity Level</Label>
-              <Select value={activityLevel} onValueChange={setActivityLevel}>
-                <SelectTrigger id="activity">
-                  <SelectValue placeholder="Select activity level">
-                    {activityLevel ? formatActivityLevel(activityLevel) : undefined}
-                  </SelectValue>
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="sedentary">Sedentary</SelectItem>
-                  <SelectItem value="lightly_active">Lightly Active</SelectItem>
-                  <SelectItem value="moderately_active">Moderately Active</SelectItem>
-                  <SelectItem value="very_active">Very Active</SelectItem>
-                  <SelectItem value="custom">Custom</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="weightGoal">Weight Goal (kg)</Label>
-              <Input
-                id="weightGoal"
-                type="number"
-                step="0.1"
-                placeholder="Enter your weight goal"
-                value={weightGoal}
-                onChange={(e) => setWeightGoal(e.target.value)}
-              />
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="goalRate">Goal Rate (kg/week)</Label>
-              <Input
-                id="goalRate"
-                type="number"
-                step="0.25"
-                placeholder="0 for maintain, negative for lose, positive for gain"
-                value={goalRate}
-                onChange={(e) => setGoalRate(e.target.value)}
-              />
-              <p className="text-xs text-muted-foreground">
-                Use negative values to lose weight (e.g., -0.5), positive to gain (e.g., 0.25), or 0 to maintain
-              </p>
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="diet">Diet Type</Label>
-              <Select value={dietType} onValueChange={setDietType}>
-                <SelectTrigger id="diet">
-                  <SelectValue>
-                    {dietType ? formatDietType(dietType) : undefined}
-                  </SelectValue>
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="omnivore">Omnivore</SelectItem>
-                  <SelectItem value="vegetarian">Vegetarian</SelectItem>
-                  <SelectItem value="vegan">Vegan</SelectItem>
-                  <SelectItem value="keto">Keto</SelectItem>
-                  <SelectItem value="paleo">Paleo</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-
-            <Button type="submit" className="w-full" disabled={updateProfile.isPending}>
+            <Button type="submit" className="w-full bg-gray-900 hover:bg-gray-800 text-white" disabled={updateProfile.isPending}>
               {updateProfile.isPending ? 'Saving...' : 'Save Profile'}
             </Button>
           </form>
         </CardContent>
       </Card>
 
-      <Card>
+      <Card className="border-gray-200">
         <CardHeader>
-          <CardTitle>Nutrient Targets</CardTitle>
-          <CardDescription>
+          <CardTitle className="text-xl font-semibold text-gray-900">Nutrient Targets</CardTitle>
+          <CardDescription className="text-gray-500">
             {targets && targets.length > 0
               ? 'Your personalized nutrient targets'
               : 'Generate default targets based on your profile'}
@@ -312,22 +322,20 @@ export default function ProfilePage() {
         </CardHeader>
         <CardContent className="space-y-4">
           {targets && targets.length > 0 ? (
-            <div className="space-y-2">
+            <div className="grid grid-cols-2 gap-3">
               {targets.map((target) => (
                 <div
                   key={target.id}
-                  className="flex items-center justify-between rounded-lg border p-3"
+                  className="flex items-center justify-between rounded-lg border border-gray-200 p-4"
                 >
                   <div>
-                    <div className="font-medium">{target.nutrients?.name}</div>
-                    <div className="text-sm text-muted-foreground">
+                    <div className="font-medium text-gray-900">{target.nutrients?.name}</div>
+                    <div className="text-sm text-gray-500">
                       {target.min_amount ? `${formatNutrient(target.min_amount)} - ` : ''}
                       {target.max_amount ? formatNutrient(target.max_amount) : '—'} {target.unit_name}
                     </div>
                   </div>
-                  <Button
-                    variant="ghost"
-                    size="sm"
+                  <button
                     onClick={async () => {
                       try {
                         await deleteTarget.mutateAsync(target.nutrient_id);
@@ -337,16 +345,17 @@ export default function ProfilePage() {
                       }
                     }}
                     disabled={deleteTarget.isPending}
+                    className="text-sm text-red-500 hover:text-red-700 hover:underline font-medium"
                   >
                     Remove
-                  </Button>
+                  </button>
                 </div>
               ))}
             </div>
           ) : (
             <Button
               onClick={handleGenerateTargets}
-              className="w-full"
+              className="w-full bg-gray-900 hover:bg-gray-800 text-white"
               disabled={upsertTarget.isPending}
             >
               {upsertTarget.isPending ? 'Generating...' : 'Generate Default Targets'}

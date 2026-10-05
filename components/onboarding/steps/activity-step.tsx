@@ -76,24 +76,24 @@ export function ActivityStep() {
             onClick={() => setSelectedLevel(level.id)}
             className={`w-full p-6 rounded-lg border-2 text-left transition-all ${
               selectedLevel === level.id
-                ? 'border-primary bg-primary/5'
-                : 'border-border hover:border-primary/50'
+                ? 'border-gray-900 bg-gray-50'
+                : 'border-gray-200 hover:border-gray-300'
             }`}
           >
             <div className="flex items-start gap-4">
               <div className="text-3xl">{level.icon}</div>
               <div className="flex-1">
-                <h3 className="font-semibold text-lg mb-1">{level.title}</h3>
-                <p className="text-sm text-muted-foreground mb-2">{level.description}</p>
+                <h3 className="font-semibold text-lg mb-1 text-gray-900">{level.title}</h3>
+                <p className="text-sm text-gray-500 mb-2">{level.description}</p>
                 {level.example && (
-                  <p className="text-sm">
+                  <p className="text-sm text-gray-700">
                     <span className="font-medium">Example:</span> {level.example}
                   </p>
                 )}
               </div>
               {selectedLevel === level.id && (
-                <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center">
-                  <svg className="w-4 h-4 text-background" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>

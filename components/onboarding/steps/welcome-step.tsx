@@ -17,20 +17,20 @@ export function WelcomeStep() {
       nextLabel="GET STARTED"
     >
       <div className="flex flex-col items-center justify-center py-8">
-        <div className="text-6xl mb-8"></div>
+        <div className="text-6xl mb-8">🎯</div>
         <div className="text-center space-y-4">
           <div className="grid grid-cols-3 gap-4 text-center">
-            <div className="p-4 rounded-lg bg-card border">
+            <div className="p-4 rounded-lg bg-white border border-gray-200">
               <div className="text-2xl mb-2">📊</div>
-              <div className="text-sm font-medium">Track Macros</div>
+              <div className="text-sm font-medium text-gray-900">Track Macros</div>
             </div>
-            <div className="p-4 rounded-lg bg-card border">
-              <div className="text-2xl mb-2">🎯</div>
-              <div className="text-sm font-medium">Set Goals</div>
+            <div className="p-4 rounded-lg bg-white border border-gray-200">
+              <div className="text-2xl mb-2"></div>
+              <div className="text-sm font-medium text-gray-900">Set Goals</div>
             </div>
-            <div className="p-4 rounded-lg bg-card border">
+            <div className="p-4 rounded-lg bg-white border border-gray-200">
               <div className="text-2xl mb-2">📈</div>
-              <div className="text-sm font-medium">View Progress</div>
+              <div className="text-sm font-medium text-gray-900">View Progress</div>
             </div>
           </div>
         </div>

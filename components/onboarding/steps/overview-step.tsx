@@ -140,25 +140,25 @@ export function OverviewStep() {
       showSkip={false}
     >
       <div className="max-w-md mx-auto">
-        <div className="bg-card border rounded-lg p-8 text-center">
-          <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+        <div className="bg-white border border-gray-200 rounded-lg p-8 text-center">
+          <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
             <span className="text-3xl"></span>
           </div>
-          <h3 className="text-xl font-semibold mb-2">{getGoalLabel()}</h3>
-          <p className="text-muted-foreground mb-6">
+          <h3 className="text-xl font-semibold mb-2 text-gray-900">{getGoalLabel()}</h3>
+          <p className="text-gray-500 mb-6">
             {profile.weight_goal_kg} kg
             {Number.isFinite(profile.goal_rate_kg_per_week) && profile.goal_rate_kg_per_week !== 0 && (
                 ` • ${Math.abs(Number(profile.goal_rate_kg_per_week))} kg/week`
             )}
           </p>
 
-          <div className="border-t pt-6">
-            <p className="text-sm text-muted-foreground mb-2">ENERGY TARGET</p>
-            <p className="text-3xl font-bold">{calorieTarget} kcal</p>
+          <div className="border-t border-gray-200 pt-6">
+            <p className="text-sm text-gray-500 mb-2">ENERGY TARGET</p>
+            <p className="text-3xl font-bold text-gray-900">{calorieTarget} kcal</p>
           </div>
         </div>
 
-        <div className="mt-6 text-center text-sm text-muted-foreground">
+        <div className="mt-6 text-center text-sm text-gray-500">
           <p>Based on your profile:</p>
           <p className="mt-1">
             {profile.sex ? profile.sex.charAt(0).toUpperCase() + profile.sex.slice(1) : ''}, {profile.age} years, {profile.height_cm}cm, {profile.weight_kg}kg

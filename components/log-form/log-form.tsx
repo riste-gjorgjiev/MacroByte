@@ -90,22 +90,22 @@ export function LogForm({ foodId, servingSizes, onSuccess }: LogFormProps) {
   };
 
   return (
-      <Card>
+      <Card className="border-gray-200">
         <CardHeader>
-          <CardTitle>Log This Food</CardTitle>
+          <CardTitle className="text-xl font-semibold text-gray-900">Log This Food</CardTitle>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
             {error && (
-                <div className="rounded-md bg-destructive/10 p-3 text-sm text-destructive">
+                <div className="rounded-lg bg-red-50 border border-red-200 p-3 text-sm text-red-700">
                   {error}
                 </div>
             )}
 
             <div className="space-y-2">
-              <Label htmlFor="serving">Serving Size</Label>
+              <Label htmlFor="serving" className="text-sm font-medium text-gray-700">Serving Size</Label>
               <Select value={servingSizeId} onValueChange={setServingSizeId}>
-                <SelectTrigger id="serving">
+                <SelectTrigger id="serving" className="border-gray-200">
                   <SelectValue
                       placeholder={
                         defaultServing
@@ -127,7 +127,7 @@ export function LogForm({ foodId, servingSizes, onSuccess }: LogFormProps) {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="amount">Amount</Label>
+              <Label htmlFor="amount" className="text-sm font-medium text-gray-700">Amount</Label>
               <Input
                   id="amount"
                   type="number"
@@ -136,13 +136,14 @@ export function LogForm({ foodId, servingSizes, onSuccess }: LogFormProps) {
                   placeholder="Enter amount"
                   value={amount}
                   onChange={(e) => setAmount(e.target.value)}
+                  className="border-gray-200"
               />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="meal">Meal</Label>
+              <Label htmlFor="meal" className="text-sm font-medium text-gray-700">Meal</Label>
               <Select value={meal} onValueChange={setMeal}>
-                <SelectTrigger id="meal" className="capitalize">
+                <SelectTrigger id="meal" className="border-gray-200 capitalize">
                   <SelectValue placeholder="Select meal" />
                 </SelectTrigger>
                 <SelectContent>
@@ -155,16 +156,17 @@ export function LogForm({ foodId, servingSizes, onSuccess }: LogFormProps) {
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="date">Date</Label>
+              <Label htmlFor="date" className="text-sm font-medium text-gray-700">Date</Label>
               <Input
                   id="date"
                   type="date"
                   value={date}
                   onChange={(e) => setDate(e.target.value)}
+                  className="border-gray-200"
               />
             </div>
 
-            <Button type="submit" className="w-full" disabled={createLogEntry.isPending}>
+            <Button type="submit" className="w-full bg-gray-900 hover:bg-gray-800 text-white" disabled={createLogEntry.isPending}>
               {createLogEntry.isPending ? 'Logging...' : 'Log Food'}
             </Button>
           </form>

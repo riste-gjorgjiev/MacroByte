@@ -47,16 +47,16 @@ export default function FoodDetailPage({ params }: { params: Promise<{ id: strin
 
   if (isLoading) {
     return (
-      <div className="container mx-auto max-w-2xl p-4">
+      <div className="space-y-6">
         <Link
           href="/foods"
-          className="mb-4 inline-flex items-center text-sm text-muted-foreground hover:text-foreground"
+          className="inline-flex items-center text-sm text-gray-500 hover:text-gray-900"
         >
           <ArrowLeft className="mr-1 h-4 w-4" />
           Back to search
         </Link>
 
-        <Card>
+        <Card className="border-gray-200">
           <CardHeader>
             <div className="flex items-center justify-between">
               <div className="space-y-2">
@@ -94,9 +94,7 @@ export default function FoodDetailPage({ params }: { params: Promise<{ id: strin
 
   if (error || !food) {
     return (
-      <div className="container mx-auto max-w-2xl p-4">
-        <div className="text-center text-destructive">Food not found</div>
-      </div>
+      <div className="text-center py-12 text-red-500">Food not found</div>
     );
   }
 
@@ -125,44 +123,44 @@ export default function FoodDetailPage({ params }: { params: Promise<{ id: strin
   };
 
   return (
-    <div className="container mx-auto max-w-2xl p-4">
+    <div className="space-y-6">
       <Link
         href="/foods"
-        className="mb-4 inline-flex items-center text-sm text-muted-foreground hover:text-foreground"
+        className="inline-flex items-center text-sm text-gray-500 hover:text-gray-900"
       >
         <ArrowLeft className="mr-1 h-4 w-4" />
         Back to search
       </Link>
 
-      <Card>
+      <Card className="border-gray-200">
         <CardHeader>
           <div className="flex items-center justify-between">
             <div>
-              <CardTitle>{food.name}</CardTitle>
+              <CardTitle className="text-2xl font-bold text-gray-900">{food.name}</CardTitle>
               {food.category && (
-                <div className="mt-1 text-sm text-muted-foreground">
+                <div className="mt-1 text-sm text-gray-500">
                   {food.category}
                 </div>
               )}
             </div>
-            <Badge variant="secondary">{food.data_type}</Badge>
+            <Badge variant="secondary" className="bg-gray-100 text-gray-700">{food.data_type}</Badge>
           </div>
         </CardHeader>
         <CardContent className="space-y-6">
           <div>
-            <h3 className="mb-2 font-semibold">Serving Sizes</h3>
-            <div className="space-y-1 text-sm">
+            <h3 className="mb-3 font-semibold text-gray-900">Serving Sizes</h3>
+            <div className="space-y-2 text-sm">
               {food.serving_sizes?.map((serving) => (
-                <div key={serving.id} className="flex justify-between">
-                  <span>
+                <div key={serving.id} className="flex justify-between py-2 border-b border-gray-100">
+                  <span className="text-gray-700">
                     {serving.amount} {serving.unit_name}
                     {serving.is_default && (
-                      <Badge variant="outline" className="ml-2 text-xs">
+                      <Badge variant="outline" className="ml-2 text-xs border-gray-200">
                         default
                       </Badge>
                     )}
                   </span>
-                  <span className="text-muted-foreground">
+                  <span className="text-gray-500">
                     {serving.gram_weight}g
                   </span>
                 </div>
@@ -171,22 +169,22 @@ export default function FoodDetailPage({ params }: { params: Promise<{ id: strin
           </div>
 
           <div>
-            <h3 className="mb-2 font-semibold">Nutrients per 100g</h3>
+            <h3 className="mb-3 font-semibold text-gray-900">Nutrients per 100g</h3>
             <div className="space-y-4">
               {nutrientsByCategory &&
                 Object.entries(nutrientsByCategory).map(([category, nutrients]) => (
                   <div key={category}>
-                    <h4 className="mb-2 text-sm font-medium text-muted-foreground">
+                    <h4 className="mb-2 text-sm font-medium text-gray-500 uppercase tracking-wide">
                       {categoryLabels[category as keyof typeof categoryLabels]}
                     </h4>
                     <div className="space-y-1 text-sm">
                       {nutrients.map((nutrient) => (
                         <div
                           key={nutrient.id}
-                          className="flex justify-between"
+                          className="flex justify-between py-1"
                         >
-                          <span>{nutrient.name}</span>
-                          <span>
+                          <span className="text-gray-700">{nutrient.name}</span>
+                          <span className="text-gray-900 font-medium">
                             {formatNutrient(nutrient.amount)} {nutrient.unit_name}
                           </span>
                         </div>
@@ -200,11 +198,11 @@ export default function FoodDetailPage({ params }: { params: Promise<{ id: strin
       </Card>
 
       {food.serving_sizes && food.serving_sizes.length > 0 && (
-        <div className="mt-6 space-y-4">
+        <div className="space-y-4">
           <Button
             onClick={handleQuickAdd}
             disabled={createLogEntry.isPending}
-            className="w-full"
+            className="w-full bg-gray-900 hover:bg-gray-800 text-white"
           >
             <Plus className="mr-2 h-4 w-4" />
             {createLogEntry.isPending ? 'Adding...' : 'Quick Add Default Serving'}

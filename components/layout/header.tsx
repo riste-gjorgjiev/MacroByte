@@ -1,35 +1,61 @@
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { createClient } from '@/lib/supabase/server';
-import { ThemeToggle } from '@/components/theme-toggle';
+'use client';
 
-export async function Header() {
-  const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { createClient } from '@/lib/supabase/client';
+import { ThemeToggle } from '@/components/theme-toggle';
+import { useEffect, useState } from 'react';
+
+export function Header() {
+  const pathname = usePathname();
+  const [user, setUser] = useState<any>(null);
+
+  useEffect(() => {
+    const supabase = createClient();
+    supabase.auth.getUser().then(({ data: { user } }) => {
+      setUser(user);
+    });
+  }, []);
+
+  const navItems = [
+    { href: '/', label: 'Dashboard' },
+    { href: '/foods', label: 'Foods' },
+    { href: '/profile', label: 'Profile' },
+  ];
 
   return (
-    <header className="border-b bg-background">
-      <div className="container mx-auto flex h-14 max-w-4xl items-center justify-between px-4">
-        <Link href="/" className="font-semibold">
+    <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/80 backdrop-blur-md">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
+        <Link href="/" className="text-xl font-bold text-gray-900">
           MacroByte
         </Link>
 
         {user && (
-          <nav className="flex items-center gap-2">
-            <Link href="/">
-              <Button variant="ghost" size="sm">Dashboard</Button>
-            </Link>
-            <Link href="/foods">
-              <Button variant="ghost" size="sm">Foods</Button>
-            </Link>
-            <Link href="/profile">
-              <Button variant="ghost" size="sm">Profile</Button>
-            </Link>
+          <nav className="flex items-center gap-1">
+            {navItems.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
+                    isActive
+                      ? 'bg-gray-900 text-white'
+                      : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
             <ThemeToggle />
             <form action="/auth/logout">
-              <Button type="submit" variant="outline" size="sm">
+              <button
+                type="submit"
+                className="rounded-lg px-4 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900"
+              >
                 Log Out
-              </Button>
+              </button>
             </form>
           </nav>
         )}

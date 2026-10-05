@@ -67,34 +67,34 @@ export function AccountStep() {
           placeholder="First Name"
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
-          className="h-14 text-lg"
+          className="h-14 text-lg border-gray-200"
         />
         <Input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="h-14 text-lg"
+          className="h-14 text-lg border-gray-200"
         />
         <Input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="h-14 text-lg"
+          className="h-14 text-lg border-gray-200"
         />
         <Input
           type="password"
           placeholder="Confirm Password"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
-          className="h-14 text-lg"
+          className="h-14 text-lg border-gray-200"
         />
         {password && confirmPassword && password !== confirmPassword && (
-          <p className="text-sm text-destructive">Passwords do not match</p>
+          <p className="text-sm text-red-600">Passwords do not match</p>
         )}
         {password && password.length < 6 && (
-          <p className="text-sm text-destructive">Password must be at least 6 characters</p>
+          <p className="text-sm text-red-600">Password must be at least 6 characters</p>
         )}
       </div>
     </OnboardingLayout>
