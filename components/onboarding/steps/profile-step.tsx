@@ -45,7 +45,7 @@ export function ProfileStep() {
       <div className="max-w-md mx-auto space-y-4">
         <div className="space-y-2">
           <label className="text-sm font-medium text-gray-700">Your sex</label>
-          <Select value={sex} onValueChange={setSex}>
+          <Select value={sex} onValueChange={(val) => setSex(val ?? '')}>
             <SelectTrigger className="h-14 border-gray-200">
               <SelectValue placeholder="Select your sex" />
             </SelectTrigger>

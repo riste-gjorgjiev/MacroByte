@@ -164,7 +164,7 @@ export function OverviewStep() {
             {profile.sex ? profile.sex.charAt(0).toUpperCase() + profile.sex.slice(1) : ''}, {profile.age} years, {profile.height_cm}cm, {profile.weight_kg}kg
           </p>
           <p className="mt-1">
-            Activity: {profile.activity_level ? profile.activity_level.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') : ''}
+            Activity: {profile.activity_level ? profile.activity_level.split('_').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') : ''}
           </p>
         </div>
       </div>

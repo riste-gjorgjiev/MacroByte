@@ -104,7 +104,7 @@ export function LogForm({ foodId, servingSizes, onSuccess }: LogFormProps) {
 
             <div className="space-y-2">
               <Label htmlFor="serving" className="text-sm font-medium text-gray-700">Serving Size</Label>
-              <Select value={servingSizeId} onValueChange={setServingSizeId}>
+              <Select value={servingSizeId} onValueChange={(val) => setServingSizeId(val ?? '')}>
                 <SelectTrigger id="serving" className="border-gray-200">
                   <SelectValue
                       placeholder={
@@ -142,7 +142,7 @@ export function LogForm({ foodId, servingSizes, onSuccess }: LogFormProps) {
 
             <div className="space-y-2">
               <Label htmlFor="meal" className="text-sm font-medium text-gray-700">Meal</Label>
-              <Select value={meal} onValueChange={setMeal}>
+              <Select value={meal} onValueChange={(val) => setMeal(val ?? '')}>
                 <SelectTrigger id="meal" className="border-gray-200 capitalize">
                   <SelectValue placeholder="Select meal" />
                 </SelectTrigger>

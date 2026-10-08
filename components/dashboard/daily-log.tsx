@@ -98,7 +98,7 @@ export function DailyLog({ date }: DailyLogProps) {
                     className="flex items-center justify-between rounded-lg border border-gray-100 p-3 transition-colors hover:bg-gray-50"
                   >
                     <div className="flex-1">
-                      <div className="font-medium text-gray-900">{entry.foods?.name}</div>
+                      <div className="font-medium text-gray-900">{(entry as any).foods?.name}</div>
                       <div className="text-sm text-gray-500">
                         {formatNutrient(entry.logged_amount, 2)} {entry.logged_unit}
                         {' • '}

@@ -69,11 +69,11 @@ export function LogEntriesList({ date }: LogEntriesListProps) {
               >
                 <div>
                   <div className="font-medium">
-                    {entry.foods?.name || 'Unknown food'}
+                    {logEntry.foods?.name || 'Unknown food'}
                   </div>
                   <div className="text-sm text-muted-foreground">
                     {formatNutrient(entry.logged_amount)} {entry.logged_unit}
-                    {entry.serving_sizes && (
+                    {logEntry.serving_sizes && (
                       <span className="ml-1">
                         ({formatNutrient(entry.gram_equivalent)}g)
                       </span>

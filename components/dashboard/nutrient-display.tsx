@@ -89,7 +89,7 @@ export function NutrientDisplay({ date }: NutrientDisplayProps) {
 
     acc[category].push({
       ...nutrient,
-      current: parseFloat(summary.total_amount),
+      current: parseFloat(summary.total_amount.toString()),
       target_min: targetMin,
       target_max: targetMax,
     });

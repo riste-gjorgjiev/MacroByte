@@ -55,7 +55,7 @@ export default function ProfilePage() {
         sex: sex as 'male' | 'female' | null,
         weight_kg: weight ? parseFloat(weight) : null,
         height_cm: height ? parseFloat(height) : null,
-        activity_level: activityLevel || null,
+        activity_level: (activityLevel as "sedentary" | "lightly_active" | "moderately_active" | "very_active" | "custom" | null) || null,
         weight_goal_kg: weightGoal ? parseFloat(weightGoal) : null,
         goal_rate_kg_per_week: goalRate ? parseFloat(goalRate) : 0,
         diet_type: dietType,
@@ -186,7 +186,7 @@ export default function ProfilePage() {
 
               <div className="space-y-2">
                 <Label htmlFor="sex" className="text-sm font-medium text-gray-700">Sex</Label>
-                <Select value={sex} onValueChange={setSex}>
+                <Select value={sex} onValueChange={(val) => setSex(val ?? '')}>
                   <SelectTrigger id="sex" className="border-gray-200">
                     <SelectValue placeholder="Select your sex" />
                   </SelectTrigger>
@@ -225,7 +225,7 @@ export default function ProfilePage() {
 
               <div className="space-y-2">
                 <Label htmlFor="activity" className="text-sm font-medium text-gray-700">Activity Level</Label>
-                <Select value={activityLevel} onValueChange={setActivityLevel}>
+                <Select value={activityLevel} onValueChange={(val) => setActivityLevel(val ?? '')}>
                   <SelectTrigger id="activity" className="border-gray-200">
                     <SelectValue placeholder="Select activity level">
                       {activityLevel ? formatActivityLevel(activityLevel) : undefined}
@@ -243,7 +243,7 @@ export default function ProfilePage() {
 
               <div className="space-y-2">
                 <Label htmlFor="diet" className="text-sm font-medium text-gray-700">Diet Type</Label>
-                <Select value={dietType} onValueChange={setDietType}>
+                <Select value={dietType} onValueChange={(val) => setDietType(val ?? '')}>
                   <SelectTrigger id="diet" className="border-gray-200">
                     <SelectValue>
                       {dietType ? formatDietType(dietType) : undefined}
@@ -329,7 +329,7 @@ export default function ProfilePage() {
                   className="flex items-center justify-between rounded-lg border border-gray-200 p-4"
                 >
                   <div>
-                    <div className="font-medium text-gray-900">{target.nutrients?.name}</div>
+                    <div className="font-medium text-gray-900">{(target as any).nutrients?.name}</div>
                     <div className="text-sm text-gray-500">
                       {target.min_amount ? `${formatNutrient(target.min_amount)} - ` : ''}
                       {target.max_amount ? formatNutrient(target.max_amount) : '—'} {target.unit_name}
